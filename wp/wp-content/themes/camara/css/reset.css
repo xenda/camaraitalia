@@ -68,33 +68,6 @@ DD_belatedPNG\\:shape,
   visibility:visible !important;
 }
 
-/*
-.unit {
-  float:left;
-}
-
-.size1of2 {
-  width:48.99%;
-}
-
-.size1of3 {
-  width:33.33%;
-}
-
-.size2of3 {
-  width:66%;
-}
-
-.firstUnit {
-  margin:0;
-}
-
-.lastUnit {
-  float:right;
-  margin:0;
-}
-*/
-
 .align-left {
   text-align:left;
 }

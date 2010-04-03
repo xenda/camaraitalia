@@ -6,30 +6,6 @@ body {
 	background: #fff;
 }
 
-.bg_top {
-	position:absolute;
-	top:0;
-	left:0;
-	background: url('../images/bg_top_deco.png') no-repeat;
-	width:669px;
-	height:425px;
-	z-index:0;
-}
-
-.bg_bottom {
-	background: url('../images/bg_bottom.png') no-repeat bottom;
-}
-
-.wrapper {
-	width: 951px;
-	margin: 0 auto;
-	position: relative;
-}
-
-.post-content {
-	margin: 5px 0;
-	padding: 0 20px;
-}
 
 a {
 	color: #a4ce13;
@@ -49,8 +25,8 @@ a {
  */
 #page {
 	margin: 0 auto;
-	padding: 0 0 15px;
-	width: 1000px;
+	padding: 0px;
+	width: 960px;
 }
 
 /**
@@ -62,11 +38,21 @@ a {
 /*---------------
 Comienzo martin*/
 #header {
-	height: 150px;
+	height: 179px;
 	width:960px;
 	position: relative;
-	background: url(../images/branding_bg.png) repeat-x center top;
+	background: url(../images/header-bg.png) repeat-y center top;
 }
+
+#corner-logo {
+	background: url(../images/logo-bg.png) no-repeat right bottom;
+	height:179px;
+	width: 200px;
+	margin: 0;
+	position: relative;
+
+}
+
 
 #head-logo {
 	background: url(../images/logo.png) no-repeat;
@@ -74,8 +60,8 @@ Comienzo martin*/
 	width: 65px;
 	margin: 0;
 	position: absolute;
-	left: 20px;
-	top: 20px;
+	left: 50px;
+	top: 10px;
 }
 
 #head-logo  a {
@@ -86,16 +72,17 @@ Comienzo martin*/
 }
 
 #head-menu {
-	position: relative;
-	left: 0;
-	top: 0;
-
+	height:179px;
+	width:760px;
+	position:absolute;
+	right:0;
+	top:0;
 }
 
 #header-nav {
 	position: relative;
-	left: 150px;
-	top: 20px;
+	left: 40px;
+	top: 150px;
 	margin:0px;
 
 }
@@ -104,14 +91,42 @@ Comienzo martin*/
 	display:inline;
 	float:left;
 	position: relative;
-	padding:3px;
+	line-height:24px;
+	
+	padding:0px;
+	text-align:center;	
+
+	background:url(../images/bot2.png) no-repeat;
+	margin-right:10px;
+	width:141px;
 }
 
+#header-nav li a{
+	display:block;
+	height:100%;
+	width:100%;
+	text-decoration:none;
+	
+}
 
 .description{
 	visibility:hidden;
+	display:none;
 }
 
+#head-idioma {
+	background:url(../images/language-bg.png) no-repeat bottom;
+	position: absolute;
+	height:20px;
+	width:200px;
+	right:25px;
+	bottom:0;
+}
+
+#content {
+	width:520px;
+	float:left;
+}
 
 /*fin martin
 ------------*/
@@ -351,16 +366,7 @@ Comienzo martin*/
 #container .bg-bottom {
 	background:url(../images/content-bg-bottom-2.png) no-repeat;
 	height:23px;
-	}	
-
-#banner .content,
-#container #content {
-	padding:0;
-	background:url(../images/content-bg-middle.png) repeat-y;
-	height:200px;
 	}
-
-
 
 /**
  *  #container
@@ -380,13 +386,13 @@ input {
  *         support, depending on child class elements.
  */
 #container {
-	background: none;
+	background: #dedede url(../images/container-bg.png) center top  repeat-x;
+	min-height:1030px;
 	text-align: justify;
 	overflow: hidden;
 	z-index: 20;
 	position: relative;
 	color: #fff;
-	top:-4px;
 }
 
 .page-id-111 #container {
@@ -513,10 +519,6 @@ h2 a {
 	padding: 45px 10px 0 39px;
 }
 
-.home #ie6 #content .last{
-	padding-right: 0px;
-}
-
 .size1of3 .img {
 	text-align: center;
 	position: relative;
@@ -559,39 +561,6 @@ top:-15px;
 	height: 40px;	
 	padding: 12px 0 0 22px;	
 	}
-
-.page-id-10 #content h2,
-.page-id-15 #content h2  {
-	background: url(../images/name-bg2.png) no-repeat;
-	width: 297px;
-}
-
-.page-id-6 #content .post ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.page-id-6 #content .post ul li {
-	float: left;
-	width: 230px;
-	height: 150px;
-	float: left;
-}
-
-.page-id-6 #content .post ul a img {
-	background: none;
-	width: 230px;
-	height: 150px;
-	border: none;
-	padding: none !important;	
-}
-
-.page-id-6 #content .post ul a {
-	display: block;
-	width: 100%;
-	height: 100%;
-}
 
 .size1of3 h2 a{
 	text-decoration: none;
@@ -844,33 +813,25 @@ width:627px;
  *         "Cameron Adams" http://themaninblue.com/experiment/footerStickAlt/
  */
 #footer {
-	font-size: 0.9em;
-	position: relative;
-	height: 107px;
+	background:#DEDEDE url(../images/footer-bg.png) center top no-repeat;
+	color:#264B66;
+	font-size:11px;
+	position:relative;
 }
 
-#footer .bg {
-	padding: 20px 0;
+.wrapper{
+	margin:0 auto;
+	padding-top:25px;
+	width:536px;	
+
 }
+
 
 #foot-content {
 	margin:0 auto;
 	width: 960px;
 }
 
-#footer,
-#footer a {
-	color: #fff;
-	text-decoration: none;
-}
-
-#footer a:hover {
-	text-decoration: underline;
-}
-
-#footer .firstUnit {
-	padding-top:3px;
-}
 
 #footer p {
 	margin: 0;
@@ -897,39 +858,6 @@ width:627px;
 #foot-nav li.first {
 	border:0;
 	padding-left:0;
-}
-
-#content {
-	padding: 0px;
-}
-
-.home #content {
-	background: none;
-	width: 1007px;
-	margin: 0 auto;
-	padding: 0 1px;
-}
-
-.home #container .bg{
-	background: url(../images/home-container-bg.png) no-repeat top center;
-	width: 100%;
-	height: 299px;
-	position: absolute;
-	}
-	
-#sidebar {
-	float: right;
-	padding-right: 40px;
-	width: 215px;
-}
-
-.content {
-	padding: 10px;
-}
-
-#content h2 {
-	font-size:1.4em;
-	font-weight:bold;
 }
 
 .post {
@@ -1066,14 +994,6 @@ hr {
 	line-height:1;	
 }
 
-#sidebar .widget {
-	width: 308px;
-}
-
-#sidebar form input, #sidebar form textarea {
-	width:170px;
-}
-
 #post-4 form {
 	margin-top: 200px;
 }
@@ -1082,13 +1002,8 @@ hr {
 	float: left;
 }
 
-#sidebar form {
-	width: 280px;
-	padding-top: 10px;
-}
 
-.post-content form,
-#sidebar form {
+.post-content form{
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -1098,8 +1013,7 @@ hr {
 	margin-top: 8px;
 }
 
-.post-content #sendbutton,
-#sidebar #sendbutton  {
+.post-content #sendbutton{
 	height: 35px;
 	margin-left:83px;
 	width: 118px;
@@ -1113,29 +1027,11 @@ hr {
 	cursor: pointer;
 }
 
-#sidebar ul {
-	list-style: none;
-}
-
-#sidebar li.menu {
-	padding-left: 20px;
-	font-size: 2em;
-}
-
-#sidebar ul li {
-	padding: 5px 0;
-}
-
-#sidebar a {
-	color: #fff;
-}
-
 #cformsform ol li {
 	margin-bottom:2px;
 }
 
-.post-content #cformsform label,
-#sidebar #cformsform label {
+.post-content #cformsform label {
 	float:left;
 	width:65px;
 }

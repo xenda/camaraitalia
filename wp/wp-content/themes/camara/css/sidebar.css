@@ -1,0 +1,40 @@
+/*
+Sidebar Left
+*/
+
+#sidebar-left {
+	float:left;
+	width:200px;
+}
+
+#sidebar-left ul {
+	list-style:none
+}
+
+#left-nav {
+	height:471px;
+	background:url(../images/menu-sidebar-bg) no-repeat;
+}
+
+#left-nav li {
+	height:35px;
+	width:150px;
+	background:url(../images/sidebar-item-bg.png) no-repeat center bottom;
+	padding:0 0 15px 0;
+}
+
+
+/*
+Sidebar Right
+*/
+
+#sidebar-right {
+	float:right;
+	width:240px;
+}
+
+#ad {
+	height:200px;
+	background: #333;
+	color: #fff;
+}

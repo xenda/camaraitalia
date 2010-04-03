@@ -5,4 +5,7 @@
  */
 ?>
 	<div id="sidebar-right">
+		<div id="ad">
+			Publicidad ^^ ¿lindo el socotroco negro no?
+		</div>
 	</div>

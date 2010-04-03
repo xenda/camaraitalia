@@ -32,7 +32,9 @@
 
 
 	<div id="header">
-		<h1 id="head-logo"><a href="" ><span><?php bloginfo('name'); ?>dhghghf</span></a></h1>
+		<div id="corner-logo">
+			<h1 id="head-logo"><a href="" ><span><?php bloginfo('name'); ?>dhghghf</span></a></h1>
+		</div>
 		<div class="description"><?php bloginfo('description'); ?></div>
 		<div id="head-menu">
 			<div class="bg"></div>
@@ -42,4 +44,3 @@
 			<div id="head-idioma"></div>
 		</div>
 	</div>
-<hr />
