@@ -30,8 +30,8 @@
 <!--[if gte IE 8]><div id="ie8"><script type="text/javascript">document.ie.version = 8;</script><![endif]-->
 <div id="page">
 
-
 	<div id="header">
+		<div id="corner-right"></div>
 		<div id="corner-logo">
 			<h1 id="head-logo"><a href="" ><span><?php bloginfo('name'); ?>dhghghf</span></a></h1>
 		</div>

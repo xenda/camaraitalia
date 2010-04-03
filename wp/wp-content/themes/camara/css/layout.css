@@ -38,18 +38,29 @@ a {
 /*---------------
 Comienzo martin*/
 #header {
+	overflow:visible;
 	height: 179px;
 	width:960px;
 	position: relative;
-	background: url(../images/header-bg.png) repeat-y center top;
+	background: url(../images/header-bg.png) repeat-y #fff left top ;
 }
 
 #corner-logo {
 	background: url(../images/logo-bg.png) no-repeat right bottom;
 	height:179px;
 	width: 200px;
-	margin: 0;
 	position: relative;
+
+}
+
+#corner-right {
+	background:url(../images/header-shadow.png) no-repeat right bottom;
+	height:317px;
+	width: 14px;
+	top: 0px;
+	right:-14px;
+	position:absolute;
+	z-index:50;
 
 }
 
@@ -61,7 +72,7 @@ Comienzo martin*/
 	margin: 0;
 	position: absolute;
 	left: 50px;
-	top: 10px;
+	top: 15px;
 }
 
 #head-logo  a {
@@ -817,6 +828,7 @@ width:627px;
 	color:#264B66;
 	font-size:11px;
 	position:relative;
+	padding-bottom:10px;
 }
 
 .wrapper{
