@@ -1,0 +1,1234 @@
+html {
+	min-width: 1000px;
+}
+
+body {
+	background: #2979B2 url(../images/bg_top.png) no-repeat center top;
+}
+
+.bg_top {
+	position:absolute;
+	top:0;
+	left:0;
+	background: url('../images/bg_top_deco.png') no-repeat;
+	width:669px;
+	height:425px;
+	z-index:0;
+}
+
+.bg_bottom {
+	background: url('../images/bg_bottom.png') no-repeat bottom;
+}
+
+.wrapper {
+	width: 951px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.post-content {
+	margin: 5px 0;
+	padding: 0 20px;
+}
+
+a {
+	color: #a4ce13;
+}
+
+.post-more,
+.post-excerpt a {
+	color: #f11300;
+}
+
+/**
+ *  #page
+ *  @desc  Main container for the whole page, except by the #footer.
+ *         It's suppose to act as a replacement for the body tag, this
+ *         is needed to implement "FooterStick Alt" by "Cameron Adams"
+ *         http://themaninblue.com/experiment/footerStickAlt/
+ */
+#page {
+	margin: 0 auto;
+	padding: 0 0 15px;
+	width: 1000px;
+}
+
+/**
+ *  #branding
+ *  @desc  Main header bar, contains the branding elements:
+ *         logo, tagline, description, phone, and get a free quote button
+ */
+#branding {
+	height: 112px;
+	position: relative;
+	background: url(../images/branding_bg.png) repeat-x center top;
+}
+
+#head-logo {
+	background: url(../images/logo.png) no-repeat;
+	height: 80px;
+	margin: 0;
+	width: 407px;
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+
+#head-logo a {
+	color: #fff;
+}
+
+#head-tagline {
+	display: none;
+}
+
+#head-contact {
+	background: url(../images/contact-us_bg.png) no-repeat;
+	font-size: 1.25em;
+	text-align: center;
+	height:107px;
+	position:absolute;
+	right:0px;
+	text-align:center;
+	top:0px;
+	width:311px;
+	color: #A45507;
+}
+
+.cufon-start #head-contact {
+	font-size: 1.75em;
+	line-height: 1;
+}
+
+#head-contact,
+#head-contact a {
+	color: #A45507;
+}
+
+#head-contact a {
+	text-decoration: none;
+}
+
+#head-logo span,
+#head-tagline a,
+#head-tagline span {
+	display: block;
+	font-size: 1px;
+	height: 100%;
+}
+
+#head-logo span,
+#head-tagline span {
+	visibility: hidden;
+}
+
+#head-contact .row {
+	display: block;
+	padding-top: 18px;
+	font-size: 1.15em;
+}
+
+#head-contact strong {
+	display: block;
+	font-size: 1.25em;
+}
+
+
+/**
+ *  #nav
+ *  @desc  Horizontal navigation bar with dropdown support
+ */
+#nav {
+	font:bold 12px/40px Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 2;
+	/*background: url(../images/nav-bg-big.png) no-repeat top center;*/
+}
+
+.cufon-start #nav {
+	font-size: 14px;
+}
+
+#ie6 #nav {
+	margin-right: 15px;
+}
+
+#nav-cont {
+	width: 100%;
+}
+
+#nav a,
+#nav-cont,
+#nav-cont ul,
+#nav-cont ul li{
+	height: 43px;
+	font-weight: bold;
+}
+
+#nav ul {
+	list-style: none;
+	margin: 0;
+	font: 12px Arial, sans-serif;
+	text-align: left;
+	padding: 0px;
+}
+
+#nav li {
+	float: left;
+	padding: 0;
+	position: relative;
+}
+
+#nav li,
+#nav a {
+	line-height: 41px;
+	color: #fff;
+	display: block;
+	float: left;
+}
+
+#ie7 #nav .cufon, #ie6 #nav .cufon {
+	margin-top: 10px;
+}
+/*
+#nav li:hover a,
+#nav li.hover a,
+#nav li:hover,
+#nav li.hover,
+#nav li.current_page_item a{
+	background: #9B4400 url(../images/vertical-sprite.png) repeat-x left top;
+	color: #fff;
+}
+*/
+
+#nav li a {
+	background: url(../images/nav-small.png) no-repeat left top;
+	text-decoration:none;
+	height:41px;
+	padding-top: 2px;
+	text-align:center;
+	width:107px;
+}
+
+#nav li:hover a,
+#nav li.hover a,
+#nav li:hover,
+#nav li.hover,
+#nav li.current_page_item a{
+	background-position: left -43px;
+	color:#7D201A
+}
+
+#nav li.first {
+	background: url(../images/shadow-left.png) no-repeat;
+	width:3px;
+}
+
+#nav li.last {
+	background: url(../images/shadow-last.png) no-repeat;
+	width:9px;
+}
+
+/* home */
+/*
+#nav li.home a{
+	background-position: left top !important;
+	width: 107px;
+	padding-left: 4px;
+}
+
+#nav li.home.current_page_item a {
+	background-position: left -43px !important;
+}
+
+#nav li.home a:hover {
+	background-position: left -43px !important;
+}
+*/
+/* //home */
+
+
+
+/*
+#nav-cont ul,
+#nav-cont ul a {
+	height: auto !important;
+	line-height: auto !important;
+}
+
+#nav-cont ul,
+#nav-cont ul li {
+	width: 180px;
+}
+
+#nav-cont ul a {
+	border-bottom: 1px solid #9ed218;
+	padding: 4px 10px;
+	width: 160px;
+}
+
+#nav-cont ul ul {
+	background: #9ed218;
+	left: 180px;
+	top: 0;
+}
+
+#nav-cont ul li.hover,
+#nav-cont ul li:hover {
+	margin-top: 0px;
+	background: #9ed218;
+}
+
+#nav-cont ul ul li.hover,
+#nav-cont ul ul li:hover {
+	margin-top: 0px;
+	background: #7ab600;
+}
+*/
+
+
+/**
+ *  #banner
+ */
+
+#banner {
+	position: relative;
+	top: -2px;
+	z-index: 6;
+}
+
+#banner .bg-top,
+#container .bg-top  {
+	background:url(../images/content-bg-top.png) no-repeat;
+	height:14px;
+}
+
+#banner .bg-bottom {
+	background:url(../images/content-bg-bottom-1.png) no-repeat;
+	height:28px;	
+	}
+	
+#container .bg-bottom {
+	background:url(../images/content-bg-bottom-2.png) no-repeat;
+	height:23px;
+	}	
+
+#banner .content,
+#container #content {
+	padding:0;
+	background:url(../images/content-bg-middle.png) repeat-y;
+	height:200px;
+	}
+
+
+
+/**
+ *  #container
+ *  @desc  Main container for the whole content. It has 1, 2 and 3 columns
+ *         support, depending on child class elements.
+ */
+
+input {
+	color: #666;
+	font: 14px Arial, sans-serif;
+	padding: 2px;
+}
+
+/**
+ *  #container
+ *  @desc  Main container for the whole content. It has 1, 2 and 3 columns
+ *         support, depending on child class elements.
+ */
+#container {
+	background: none;
+	text-align: justify;
+	overflow: hidden;
+	z-index: 20;
+	position: relative;
+	color: #fff;
+	top:-4px;
+}
+
+.page-id-111 #container {
+	background: none;
+	top: -28px;
+}
+
+
+#banner .panelgallery {
+	margin: 23px auto 0 auto;
+	height: 301px;
+	width: 982px;
+	overflow: hidden;
+	position: relative;
+}
+
+#callout {
+	float: right;
+	width: 334px;
+}
+
+#callout-testimonials {
+	background: #fff url(../images/block.jpg) repeat-x left bottom;
+	height: 151px;
+	overflow: hidden;
+}
+
+#callout-subscribe {
+	background: #fff url(../images/block.jpg) repeat-x left bottom;
+	height: 150px;
+	overflow: hidden;
+}
+
+#callout .content {
+	padding: 15px 95px 10px 12px;
+}
+
+#callout-testimonials .content {
+	background: url(../images/icon_testimonial.png) no-repeat 260px 50px;
+}
+
+#callout-subscribe .content {
+	background: url(../images/icon_subscribe.png) no-repeat 260px 50px;
+	padding-right: 15px;
+	padding-top: 25px;
+}
+
+h2 {
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+h2,
+h2 a {
+	/*color: #240f03;*/
+	color: #A45507;
+}
+
+.cufon-start h2 {
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 1;
+}
+
+#callout blockquote {
+	background: url(../images/quote.png) no-repeat;
+	color: #9d897b;
+	font-size: 1.4em;
+	font-weight: bold;
+	font-style: normal;
+	margin: 0;
+	padding: 15px 20px 10px;
+	text-align: center;
+}
+
+.cufon-start #callout blockquote {
+	font-size: 25px;
+	letter-spacing: -1px;
+	line-height: 1;
+}
+
+#callout-subscribe h2 {
+	margin-bottom: 10px;
+}
+
+#callout-subscribe form {
+	text-align: right;
+	width: 230px;
+}
+
+#callout-subscribe input {
+	padding: 2px 4px;
+	width: 215px;
+}
+
+#callout-subscribe button {
+	background: transparent url(../images/button_subscribe.png) no-repeat;
+	border: 0;
+	height: 22px;
+	padding: 0;
+	width: 79px;
+}
+
+#callout-subscribe button span {
+	display: none;
+}
+
+.widget {
+	/*background: #fff url(../images/block.jpg) repeat-x left bottom;*/
+	float: left;
+	padding: 0;
+}
+
+.size1of3 {
+	width: 267px;
+	height: 283px;
+	padding: 45px 29px 0 39px;
+}
+
+#ie6 .size1of3 {
+	padding: 45px 10px 0 39px;
+}
+
+.home #ie6 #content .last{
+	padding-right: 0px;
+}
+
+.size1of3 .img {
+	text-align: center;
+	position: relative;
+}
+
+.size1of3 .img img{
+left:-7px;
+position:relative;
+top:-15px;
+}
+
+.size1of3 .img .t,
+.size1of3 .img .b {
+	height: 22px;
+	background: url(../images/single-sprite.png) no-repeat right top;
+	position: relative;
+	z-index: 50;
+}
+
+.size1of3 .img .t {
+	width: 252px;
+}
+
+.size1of3 .img .b{
+	background-position: right -22px;
+	right:13px;
+	top:-30px;
+}
+
+.size1of3 h2 {
+
+	margin: -22px 0 0 0;
+
+	position: relative;
+}
+
+#content h2  {
+	background: url(../images/single-sprite.png) no-repeat -727px -53px;
+	width: 245px;
+	height: 40px;	
+	padding: 12px 0 0 22px;	
+	}
+
+.page-id-10 #content h2,
+.page-id-15 #content h2  {
+	background: url(../images/name-bg2.png) no-repeat;
+	width: 297px;
+}
+
+.page-id-6 #content .post ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.page-id-6 #content .post ul li {
+	float: left;
+	width: 230px;
+	height: 150px;
+	float: left;
+}
+
+.page-id-6 #content .post ul a img {
+	background: none;
+	width: 230px;
+	height: 150px;
+	border: none;
+	padding: none !important;	
+}
+
+.page-id-6 #content .post ul a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.size1of3 h2 a{
+	text-decoration: none;
+	}
+
+.last {
+	margin: 0;
+}
+
+input,
+select,
+textarea {
+	width: 70px;
+	border: solid 1px #cccccc;
+	background: #ffffff;
+}
+
+#types input,
+#q-listing input,
+#q-property input,
+#listing input,
+#property input {
+	border: none;
+	width: 15px;
+	height: 15px;
+}
+
+/**
+ *  #form de real state
+ *  @desc  Footer container, it has 2 rows with repeated content site wide
+ *         It has FooterStick Alt support by "FooterStick Alt" by
+ *         "Cameron Adams" http://themaninblue.com/experiment/footerStickAlt/
+ */
+.search-home,
+.search-result,
+.house,
+.contact-agent {
+	margin-left:7px;
+	padding-left:0;
+	padding-right:0;
+	padding-top:0;
+	width:671px;
+ }
+ 
+.search-house h3,
+.search-result h3,
+.house h3,
+.contact-agent h3{
+	background: url(../images/let-help.png) no-repeat;
+	height: 43px;
+}
+
+.search-house h3 span,
+.search-result h3 span,
+.house h3 span,
+.contact-agent h3 span {
+	display:none;
+}
+
+.search-house form {
+	text-align: center;
+	background: #EBF5F9;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.search-house #search-terms {
+	width: 400px;
+	margin-left: 20px;
+	}
+	
+.search-house ul {
+	list-style:none;
+}
+.search-house ul li {
+	float: left;
+	margin-right: 10px;
+}
+
+.search-house fieldset {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.search-house fieldset.location {
+	padding-top: 10px;
+	}
+	
+.search-house fieldset#price {
+	margin-left: 20px;
+	}
+	
+.search-house fieldset#price p{
+	text-align: left;
+	}
+	
+.search-house fieldset#habitation{	
+	padding-left:30px;
+	padding-top:13px;
+}
+
+.search-house fieldset#listing legend,
+.search-house fieldset#property legend {
+	font-weight: bold;
+}
+
+.search-house fieldset#habitation label{
+	font-weight: bold;
+	}
+
+.search-house fieldset#another ul {
+	height: 38px;
+	margin-bottom:69px;
+	margin-top:2px;	
+	}
+	
+.search-house fieldset#another ul li {
+	margin-right: 20px;
+	font-weight: bold;
+	}
+	
+.search-house fieldset#another {
+	font-weight: bold;
+	margin-left: 56px;
+	}
+	
+.search-house fieldset#another .another{
+	text-align: left;
+	padding-bottom: 10px;
+	}
+	
+.search-house fieldset#another .another ul{
+	padding-left: 0;
+	margin-left: 0;
+	}	
+	
+.search-house fieldset#prices input,
+#another .another input {
+	background: url(../images/input-backgroung.png) no-repeat;
+	height:14px;
+	padding-bottom:7px;
+	padding-left:6px;
+	padding-right:6px;
+	padding-top:7px;
+	width:89px;	
+	border: none;
+	}
+
+.search-house .another {
+	height:55px;
+	}
+	
+.search-house .submit {
+	float: right;
+	margin-right: 30px;
+	width: 130px;
+	}
+
+.search-house fieldset#listing,
+.search-house fieldset#property{
+		text-align: left;
+	}
+	
+.search-house form div fieldset {
+	float: left;
+}
+
+.search-result #result-header{
+	background: #ebf5f9;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.search-result .result-content{
+margin-bottom:10px;
+margin-top:0;
+padding-bottom:5px;
+padding-right:10px;
+padding-top:10px;
+width:627px;
+	height: 100px;
+	background: #ebf5f9;
+	}
+	
+.search-result .result-content img{
+	background: url(../images/img-background2.png) no-repeat;
+	padding-bottom:6px;
+	padding-left:2px;
+	padding-right:6px;
+	padding-top:1px;	
+	}	
+	
+.search-result ul {
+	list-style:none;
+}
+
+.search-result ul li.photo{
+	float: left;
+	width: 120px;
+}
+
+.search-result ul li{
+	float: left;
+	width: 94px;
+}
+
+.search-result .more-info{
+	float: left;
+	margin-top: 50px;
+	}
+
+.search-result .send-question{
+	float: right;
+	background: #80B80D url(../images/search_c.png) repeat-x;
+	margin-top:50px;	
+}
+
+.search-result .send-question a{
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+	height:23px;
+
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:4px;
+	}
+
+#paginator .prev {
+	float: left;
+}
+
+#paginator .next {
+	float: right;
+}
+
+#paginator .pag {
+	float: right;
+}
+
+#paginator .pag li{
+	width: 10px;
+}
+
+/**
+ *  #footer
+ *  @desc  Footer container, it has 2 rows with repeated content site wide
+ *         It has FooterStick Alt support by "FooterStick Alt" by
+ *         "Cameron Adams" http://themaninblue.com/experiment/footerStickAlt/
+ */
+#footer {
+	font-size: 0.9em;
+	position: relative;
+	height: 107px;
+}
+
+#footer .bg {
+	padding: 20px 0;
+}
+
+#foot-content {
+	margin:0 auto;
+	width: 960px;
+}
+
+#footer,
+#footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+}
+
+#footer .firstUnit {
+	padding-top:3px;
+}
+
+#footer p {
+	margin: 0;
+}
+
+#foot-nav {
+	list-style: none;
+	margin: 0 0 0.25em;
+	overflow:hidden;
+}
+
+#foot-nav,
+#foot-nav * {
+	height: 1em;
+	line-height: 1;
+}
+
+#foot-nav li {
+	border-left: 1px solid #fff;
+	display: inline;
+	padding:0 4px 0 8px;
+}
+
+#foot-nav li.first {
+	border:0;
+	padding-left:0;
+}
+
+#content {
+	padding: 0px;
+}
+
+.home #content {
+	background: none;
+	width: 1007px;
+	margin: 0 auto;
+	padding: 0 1px;
+}
+
+.home #container .bg{
+	background: url(../images/home-container-bg.png) no-repeat top center;
+	width: 100%;
+	height: 299px;
+	position: absolute;
+	}
+	
+#sidebar {
+	float: right;
+	padding-right: 40px;
+	width: 215px;
+}
+
+.content {
+	padding: 10px;
+}
+
+#content h2 {
+	font-size:1.4em;
+	font-weight:bold;
+}
+
+.post {
+	min-height: 250px;
+	padding: 10px 30px;
+}
+
+.page-template-menu-php .post {
+	float: left;
+	padding-left:30px;
+	padding-right:0;
+	width:710px;
+}
+
+.page-template-menu-php .post-content {
+	padding-right:0;
+	width:690px;
+}
+
+#ie6 .post {
+	height: 250px;
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	margin: 0;
+}
+
+.post-meta {
+	font-size: 0.9em;
+	margin-bottom: 0.5em;
+}
+
+.post-meta,
+.post-meta a {
+	color: #555;
+}
+
+.post-navigation {
+	padding: 5px 0px;
+	text-align: center;
+}
+
+.post-share {
+	float: left;
+}
+
+.post-share img {
+	height: 18px;
+}
+
+.post-ratings {
+	float: right;
+	width: 160px !important;
+}
+
+.post .post-content p {
+	font-family: Arial;
+	font-size: 13px;
+}
+
+a img {
+	background: #fff;
+	border: 1px solid #ccc;
+	color: #666;
+	padding: 2px;
+}
+
+.alignleft {
+	float: left;
+	margin: 0 1em 1em 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0 0 1em 1em;
+}
+
+.alignnone {
+	clear: both;
+	float: none;
+	margin: 0 0 1em 0;
+}
+
+.aligncenter {
+	clear: both;
+	float: none;
+	margin: 0 0 1em 0;
+	text-align: center;
+}
+
+img.alignleft,
+img.alignright,
+img.aligncenter,
+img.alignnone {
+	background: #fff;
+	padding: 7px 8px;
+	border: 1px solid #666;
+	border-color: #ddd #bbb #bbb #ddd;
+}
+
+hr {
+	border: 1px solid #ccc;
+	border-width: 0 0 1px;
+	margin: 10px 0;
+}
+
+#map {
+	width: 325px;
+	height:242px;
+	margin-left:10px;
+	float: right;
+	overflow: hidden;
+	background: #fff;
+	padding: 7px 8px;
+	border: 1px solid #666;
+	border-color: #ddd #bbb #bbb #ddd;
+}
+
+#delivery {
+	float: right;
+	margin-right: 10px;
+}
+
+/* Formularios */
+
+#cformsform legend {
+	color:#240F03;
+	font-size:20px;
+	font-weight:normal;
+	letter-spacing:-1px;
+	line-height:1;	
+}
+
+#sidebar .widget {
+	width: 308px;
+}
+
+#sidebar form input, #sidebar form textarea {
+	width:170px;
+}
+
+#post-4 form {
+	margin-top: 200px;
+}
+.post-content form {
+	width:305px;
+	float: left;
+}
+
+#sidebar form {
+	width: 280px;
+	padding-top: 10px;
+}
+
+.post-content form,
+#sidebar form {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cformsform ol {
+	list-style: none;
+	margin-top: 8px;
+}
+
+.post-content #sendbutton,
+#sidebar #sendbutton  {
+	height: 35px;
+	margin-left:83px;
+	width: 118px;
+	font-size: 1em;
+	border: none;
+	background: url(../images/sendbutton-bg.png) no-repeat;
+	padding: 2px 8px 14px 2px;
+}
+
+.post-content #sendbutton:hover {
+	cursor: pointer;
+}
+
+#sidebar ul {
+	list-style: none;
+}
+
+#sidebar li.menu {
+	padding-left: 20px;
+	font-size: 2em;
+}
+
+#sidebar ul li {
+	padding: 5px 0;
+}
+
+#sidebar a {
+	color: #fff;
+}
+
+#cformsform ol li {
+	margin-bottom:2px;
+}
+
+.post-content #cformsform label,
+#sidebar #cformsform label {
+	float:left;
+	width:65px;
+}
+
+.post-content form input, .post-content form textarea {
+	width:198px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+p.linklove {
+	display: none;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/*
+
+	GalleryView Stylesheet
+	
+	Use the CSS rules below to modify the look of your gallery.
+	
+	To create additional rules, use the markup below as a guide to GalleryView's architecture.
+	
+	<div class="gallery">
+		<div class="panel">
+			<img src="path/to/image.jpg" />
+			<div class="panel-overlay">
+				...overlay content...
+			</div>
+			<div class="overlay-background"></div>
+		</div>
+		<ul class="filmstrip">
+			<li class="frame current">
+				<img src="path/to/thumbnail.jpg" />
+				<div class="caption">caption text</div>
+			</li>
+			<li class="frame">
+				<img src="path/to/thumbnail.jpg" />
+				<div class="caption">caption text</div>
+			</li>
+		</ul>
+	</div>
+		
+
+*/
+
+ul.galleryview {
+	list-style: none;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+}
+
+ul.galleryview li{
+	display: none;
+}
+
+ul.galleryview li:first-child{
+	display: block;
+}
+
+/* GALLERY LIST */
+/* IMPORTANT - Change '#photos' to the ID of your gallery list to prevent a flash of unstyled content */
+#photos { visibility: hidden; }
+
+/* GALLERY CONTAINER */
+.gallery { margin: 0 auto;}
+
+.gallery ul {
+	text-indent: 0 !important;
+	list-style: none !important;
+}
+
+.gallery ul li {
+	display: inline;
+}
+
+/* LOADING BOX */
+/*.loader { background: url(loader.gif) center center no-repeat #ddd; }*/
+
+/* GALLERY PANELS */
+.panel {
+}
+
+/* DEFINE HEIGHT OF PANEL OVERLAY */
+/* NOTE - It is best to define padding here as well so overlay and background retain identical dimensions */
+
+.panel .panel-overlay,
+.panel .overlay-background { height: 30px; line-height: 30px;}
+
+/* PANEL OVERLAY BACKGROUND */
+.panel .overlay-background { background: #222; }
+
+/* PANEL OVERLAY CONTENT */
+.panel .panel-overlay { color: white; font-size: 1.5em; font-weight: normal; letter-spacing: 1px; text-align: center;}
+.panel .panel-overlay a { color: white; text-decoration: underline; font-weight: bold; }
+
+/* FILMSTRIP */
+/* 'margin' will define top/bottom margin in completed gallery */
+.filmstrip { margin: 5px; }
+
+/* FILMSTRIP FRAMES (contains both images and captions) */
+.frame {}
+
+/* WRAPPER FOR FILMSTRIP IMAGES */
+.frame .img_wrap { border: 1px solid #aaa; }
+
+/* WRAPPER FOR CURRENT FILMSTRIP IMAGE */
+.frame.current .img_wrap { border-color: #000; }
+
+/* FRAME IMAGES */
+.frame img { border: none; }
+
+/* FRAME CAPTION */
+.frame .caption { font-size: 11px; text-align: center; color: #888; }
+
+/* CURRENT FRAME CAPTION */
+.frame.current .caption { color: #000; }
+
+/* POINTER FOR CURRENT FRAME */
+.pointer {
+	border-color: #000;
+}
+
+/* TRANSPARENT BORDER FIX FOR IE6 */
+/* NOTE - DO NOT CHANGE THIS RULE */
+*html .pointer {
+	filter: chroma(color=pink);
+}

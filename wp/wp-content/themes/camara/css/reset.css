@@ -1,0 +1,121 @@
+/* -------------------------------------------------------------- 
+  
+   reset.css
+   * Resets default browser CSS.
+   
+-------------------------------------------------------------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+body { 
+  line-height: 1.5; 
+}
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+table, td, th { vertical-align: middle; }
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+
+/* Remove annoying border on linked images. */
+a img { border: none; }
+
+
+
+/**
+  CUSTOM STYLES
+*/
+a:hover {
+  text-decoration:none;
+}
+
+a,
+a span,
+button {
+  cursor:pointer;
+}
+
+img {
+  vertical-align:bottom;
+}
+
+DD_belatedPNG\\:*,
+DD_belatedPNG\\:shape,
+#ie6 .pngfix {
+  visibility:hidden;
+}
+
+.hasJS DD_belatedPNG\\:*,
+.hasJS DD_belatedPNG\\:shape,
+.hasJS .pngfix {
+  visibility:visible !important;
+}
+
+/*
+.unit {
+  float:left;
+}
+
+.size1of2 {
+  width:48.99%;
+}
+
+.size1of3 {
+  width:33.33%;
+}
+
+.size2of3 {
+  width:66%;
+}
+
+.firstUnit {
+  margin:0;
+}
+
+.lastUnit {
+  float:right;
+  margin:0;
+}
+*/
+
+.align-left {
+  text-align:left;
+}
+
+.align-right {
+  text-align:right;
+}
+
+.line, .lastUnit, .clearfix {overflow: hidden;_overflow:visible;_zoom:1; }
+.unit{float:left;_zoom:1;}
+.unitExt{float:right;}
+.size1of1{float:none;}
+.size1of2{width:49.99999%;}
+.size1of3{width:33.33333%;}
+.size2of3{width:66.66666%;}
+.size1of4{width:25%;}
+.size3of4{width:75%;}
+.size1of5{width:20%;}
+.size2of5{width:40%;}
+.size3of5{width:60%;}
+.size4of5{width:80%;}
+.lastUnit {float:none;_position:relative; _left:-3px; _margin-right: -3px;width:auto;}
+
+.clear { clear:both; }
