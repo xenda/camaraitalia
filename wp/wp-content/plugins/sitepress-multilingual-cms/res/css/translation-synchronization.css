@@ -1,0 +1,18 @@
+.icon32{
+    background: transparent url(../img/icon.png) no-repeat !important;    
+}
+.icon32_adv{
+    background: transparent url(../img/icon_adv.png) no-repeat !important;    
+}
+#icl_plugin_texts_wrapper .postbox-container{
+    width:100%!important;
+}
+div.postbox div.inside {
+    margin:10px;
+    position:relative;
+}
+#icl_plugin_texts_wrapper .widefat th{
+    line-height: 1em;
+    padding:4px;
+    color:#555;
+}

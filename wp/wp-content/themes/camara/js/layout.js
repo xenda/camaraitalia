@@ -30,9 +30,27 @@ Site = {
 			}
 		}
 	},
+	combos: function(){
+		//$('.dropdown').msDropDown();
+
+		$('.dropdown').change(function () {
+			//alert($(this).val());
+			$('.dropdown-content').fadeOut();
+			if ($(this).val() == 'none'){
+				return false;
+			}
+			var id = '#' + $(this).val();
+			
+			$(id).fadeIn();
+
+		});
+		
+		$('.dropdown').change();
+	},
 	init: function(){
 		
 		Site.ddpng();
+		Site.combos();
 		//Site.nav();
 		
 		$(document.body).addClass('hasJS');
