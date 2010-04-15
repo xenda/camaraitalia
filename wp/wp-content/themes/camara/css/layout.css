@@ -596,22 +596,6 @@ width:627px;
 	padding: 10px 30px;
 }
 
-.page-template-menu-php .post {
-	float: left;
-	padding-left:30px;
-	padding-right:0;
-	width:710px;
-}
-
-.page-template-menu-php .post-content {
-	padding-right:0;
-	width:690px;
-}
-
-#ie6 .post {
-	height: 250px;
-}
-
 h1 {
 	font-size: 28px;
 	font-weight: bold;
@@ -789,4 +773,21 @@ p.linklove {
 	display:none;
 	position:absolute;
 	top:35x;
+}
+
+.page #content {
+	width:500px;
+	padding-left:20px;
+}
+
+.page h2 {
+	font-size:1.85em;
+	line-height:1.3em;
+	margin-bottom:8px;
+	text-transform:uppercase;	
+}
+
+.page h2 a {
+	color:#264B66;
+	text-decoration:none;
 }
