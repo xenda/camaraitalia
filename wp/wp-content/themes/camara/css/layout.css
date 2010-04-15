@@ -1064,9 +1064,8 @@ p.linklove {
 	position:relative;
 }
 
-.dropdown-content {
+.page-template-opportunities-php .dropdown-content {
 	display:none;
 	position:absolute;
 	top:35x;
-	
 }

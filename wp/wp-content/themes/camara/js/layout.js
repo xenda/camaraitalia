@@ -33,19 +33,40 @@ Site = {
 	combos: function(){
 		//$('.dropdown').msDropDown();
 
-		$('.dropdown').change(function () {
-			//alert($(this).val());
-			$('.dropdown-content').fadeOut();
-			if ($(this).val() == 'none'){
-				return false;
-			}
-			var id = '#' + $(this).val();
+		//Oportunidades
+			$('.page-template-opportunities-php .dropdown').change(function () {
+				//alert($(this).val());
+				$('.dropdown-content').fadeOut();
+				if ($(this).val() == 'none'){
+					return false;
+				}
+				var id = '.page-template-opportunities-php #' + $(this).val();
+				
+				$(id).fadeIn();
+	
+			});
 			
-			$(id).fadeIn();
-
-		});
+			$('.page-template-opportunities-php .dropdown').change();
+		//fin
 		
-		$('.dropdown').change();
+		//Socios
+			$('.page-template-partners-php .dropdown').change(function () {
+				
+				$('.dropdown-content li').fadeOut();
+				if ($(this).val() == 'none'){
+					$('.dropdown-content li').fadeIn();					
+					return false;
+				}
+				
+				var id = '.page-template-partners-php li.' + $(this).val();
+				$(id).fadeIn();
+	
+			});
+			
+			if ($('.page-template-partners-php .dropdown').val() != 'none') {
+				$('.page-template-partners-php .dropdown').change();
+			}
+		
 	},
 	init: function(){
 		

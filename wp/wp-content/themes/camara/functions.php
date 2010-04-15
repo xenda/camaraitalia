@@ -8,10 +8,8 @@ $categories['opportunities'] = 5;
 $categories['partners'] = 8;
 //$categories['opportunities'] = 5;
 
-
-function build_combo($class = '', $cat){
-	//obtiene a todos
-	
+function get_first_letter($value){
+	return strtolower(substr($value, 0, 1));
 }
 
 
