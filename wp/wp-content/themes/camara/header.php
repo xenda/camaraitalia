@@ -40,14 +40,12 @@
 			<ul id="header-nav">
 				<?php wp_list_pages('child_of=10&depth=1&title_li=&sort_column=menu_order'); ?>
 			</ul>
-			<div id="head-idioma">
-				<ul>
-					<?php foreach(qtrans_getSortedLanguages() as $language): ?>
-						<li <?php if($language == $q_config['language']) echo ' class="active"'; ?>>
-							<a href="<?php echo qtrans_convertURL($url, $language); ?>" class="qtrans_flag_<?php echo $language ?> qtrans_flag_and_text"><span><?php echo $q_config['language_name'][$language]; ?></span></a>
-						</li>
-					<?php endforeach; ?>
-				</ul>			
-			</div>
+			<ul id="head-idioma">
+				<?php foreach(qtrans_getSortedLanguages() as $language): ?>
+					<li class="flag_<?php echo $language ?> <?php if($language == $q_config['language']) echo ' class="active"'; ?>">
+						<a href="<?php echo qtrans_convertURL($url, $language); ?>" ><span><?php echo $language; ?></span></a>
+					</li>
+				<?php endforeach; ?>
+			</ul>			
 		</div>
 	</div>

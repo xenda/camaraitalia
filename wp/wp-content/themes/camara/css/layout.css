@@ -135,11 +135,40 @@ Comienzo martin*/
 #head-idioma {
 	background:url(../images/language-bg.png) no-repeat bottom;
 	position: absolute;
-	height:20px;
+	height:45px;
 	width:200px;
 	right:25px;
 	bottom:0;
+	margin:0;
+	padding:0 0 10px 0;
+	list-style:none;
 }
+
+#head-idioma li{
+	width:84px;
+	height:43px;
+	float:left;
+	margin:0 6px;
+}
+
+#head-idioma .flag_it{
+	background:url(../images/language-italiano.png) no-repeat;
+	}
+	
+#head-idioma .flag_es{
+	background:url(../images/language-espanol.png) no-repeat;
+}
+
+#head-idioma li a{
+	display:block;
+	width:100%;
+	height:100%;
+}	
+	
+#head-idioma li a span{
+	display:none;
+	visibility:hidden;
+}	
 
 #content {
 	width:520px;
