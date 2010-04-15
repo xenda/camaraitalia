@@ -294,61 +294,10 @@ Comienzo martin*/
 }
 
 /* home */
-/*
-#nav li.home a{
-	background-position: left top !important;
-	width: 107px;
-	padding-left: 4px;
+.home .camara {
+	background: url(../images/pics.png) no-repeat center top;
+	height:341px;
 }
-
-#nav li.home.current_page_item a {
-	background-position: left -43px !important;
-}
-
-#nav li.home a:hover {
-	background-position: left -43px !important;
-}
-*/
-/* //home */
-
-
-
-/*
-#nav-cont ul,
-#nav-cont ul a {
-	height: auto !important;
-	line-height: auto !important;
-}
-
-#nav-cont ul,
-#nav-cont ul li {
-	width: 180px;
-}
-
-#nav-cont ul a {
-	border-bottom: 1px solid #9ed218;
-	padding: 4px 10px;
-	width: 160px;
-}
-
-#nav-cont ul ul {
-	background: #9ed218;
-	left: 180px;
-	top: 0;
-}
-
-#nav-cont ul li.hover,
-#nav-cont ul li:hover {
-	margin-top: 0px;
-	background: #9ed218;
-}
-
-#nav-cont ul ul li.hover,
-#nav-cont ul ul li:hover {
-	margin-top: 0px;
-	background: #7ab600;
-}
-*/
 
 
 /**
