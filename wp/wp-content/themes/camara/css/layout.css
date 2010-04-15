@@ -110,6 +110,10 @@ Comienzo martin*/
 	width:141px;
 }
 
+#header-nav li.page-item-12{
+	word-spacing:-1px;
+}
+
 #header-nav li a{
 	display:block;
 	height:100%;
@@ -198,94 +202,6 @@ Comienzo martin*/
 #head-contact strong {
 	display: block;
 	font-size: 1.25em;
-}
-
-
-/**
- *  #nav
- *  @desc  Horizontal navigation bar with dropdown support
- */
-#nav {
-	font:bold 12px/40px Arial, sans-serif;
-	text-align: center;
-	text-transform: uppercase;
-	position: relative;
-	z-index: 2;
-	/*background: url(../images/nav-bg-big.png) no-repeat top center;*/
-}
-
-.cufon-start #nav {
-	font-size: 14px;
-}
-
-#ie6 #nav {
-	margin-right: 15px;
-}
-
-#nav-cont {
-	width: 100%;
-}
-
-#nav a,
-#nav-cont,
-#nav-cont ul,
-#nav-cont ul li{
-	height: 43px;
-	font-weight: bold;
-}
-
-#nav ul {
-	list-style: none;
-	margin: 0;
-	font: 12px Arial, sans-serif;
-	text-align: left;
-	padding: 0px;
-}
-
-#nav li {
-	float: left;
-	padding: 0;
-	position: relative;
-}
-
-#nav li,
-#nav a {
-	line-height: 41px;
-	color: #fff;
-	display: block;
-	float: left;
-}
-
-#ie7 #nav .cufon, #ie6 #nav .cufon {
-	margin-top: 10px;
-}
-
-#nav li a {
-	background: url(../images/nav-small.png) no-repeat left top;
-	text-decoration:none;
-	height:41px;
-	padding-top: 2px;
-	text-align:center;
-	width:107px;
-}
-
-#nav li:hover a,
-#nav li.hover a,
-#nav li:hover,
-#nav li.hover,
-#nav li.current_page_item a{
-	background-position: left -43px;
-	color:#7D201A
-}
-
-#nav li.first {
-	background: url(../images/shadow-left.png) no-repeat;
-	width:3px;
-}
-
-#nav li.last {
-	background: url(../images/shadow-last.png) no-repeat;
-	width:9px;
 }
 
 /* home */
