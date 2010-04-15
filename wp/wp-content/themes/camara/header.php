@@ -37,10 +37,9 @@
 		</div>
 		<div class="description"><?php bloginfo('description'); ?></div>
 		<div id="head-menu">
-			<div class="bg"></div>
-				<ul id="header-nav">
-					<?php wp_list_pages('child_of=10&depth=1&title_li=&sort_column=menu_order'); ?>
-				</ul>
+			<ul id="header-nav">
+				<?php wp_list_pages('child_of=10&depth=1&title_li=&sort_column=menu_order'); ?>
+			</ul>
 			<div id="head-idioma"></div>
 		</div>
 	</div>

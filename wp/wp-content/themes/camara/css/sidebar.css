@@ -8,7 +8,9 @@ Sidebar Left
 }
 
 #sidebar-left ul {
-	list-style:none
+	list-style:none;
+	margin:0;
+	padding:40px 0 0 30px;
 }
 
 #left-nav {
@@ -20,9 +22,24 @@ Sidebar Left
 	height:35px;
 	width:150px;
 	background:url(../images/sidebar-item-bg.png) no-repeat center bottom;
-	padding:0 0 15px 0;
+	padding:5px 15px 5px 0;
 }
 
+#left-nav li:first-child,
+#left-nav li.first-child {
+	padding:5px 15px 15px 0;
+}
+
+#left-nav a {
+	color:#333;
+	text-decoration:none;
+	font-size:1.35em;
+	line-height:.95em;
+}
+
+#left-nav a:hover {
+	color:#999;
+}
 
 /*
 Sidebar Right

@@ -69,7 +69,7 @@ Comienzo martin*/
 	margin: 0;
 	position: absolute;
 	left: 70px;
-	top: 15px;
+	top: 16px;
 }
 
 #head-logo  a {
@@ -80,7 +80,7 @@ Comienzo martin*/
 }
 
 #head-menu {
-	background: url(../images/bg_header.jpg) no-repeat left top;
+	background: url(../images/bg_header.jpg) no-repeat left -2px;
 	height:179px;
 	width:760px;
 	position:absolute;
@@ -91,7 +91,7 @@ Comienzo martin*/
 #header-nav {
 	position: relative;
 	left: 25px;
-	top: 125px;
+	top: 126px;
 	margin:0px;
 
 }
@@ -115,7 +115,12 @@ Comienzo martin*/
 	height:100%;
 	width:100%;
 	text-decoration:none;
-	
+	color:#99CCCC;
+	font-size:1.15em;
+}
+
+#header-nav li a:hover {
+	color: #e8edee;
 }
 
 .description{
@@ -254,16 +259,6 @@ Comienzo martin*/
 #ie7 #nav .cufon, #ie6 #nav .cufon {
 	margin-top: 10px;
 }
-/*
-#nav li:hover a,
-#nav li.hover a,
-#nav li:hover,
-#nav li.hover,
-#nav li.current_page_item a{
-	background: #9B4400 url(../images/vertical-sprite.png) repeat-x left top;
-	color: #fff;
-}
-*/
 
 #nav li a {
 	background: url(../images/nav-small.png) no-repeat left top;
@@ -299,6 +294,13 @@ Comienzo martin*/
 	height:341px;
 }
 
+.home h2 {
+	color: #264B66;
+	font-size:1.85em;
+	text-align:center;
+	font-weight:bold;
+	margin-bottom:10px;
+}
 
 /**
  *  #banner
@@ -351,181 +353,6 @@ input {
 	z-index: 20;
 	position: relative;
 	color: #000;
-}
-
-.page-id-111 #container {
-	background: none;
-	top: -28px;
-}
-
-
-#banner .panelgallery {
-	margin: 23px auto 0 auto;
-	height: 301px;
-	width: 982px;
-	overflow: hidden;
-	position: relative;
-}
-
-#callout {
-	float: right;
-	width: 334px;
-}
-
-#callout-testimonials {
-	background: #fff url(../images/block.jpg) repeat-x left bottom;
-	height: 151px;
-	overflow: hidden;
-}
-
-#callout-subscribe {
-	background: #fff url(../images/block.jpg) repeat-x left bottom;
-	height: 150px;
-	overflow: hidden;
-}
-
-#callout .content {
-	padding: 15px 95px 10px 12px;
-}
-
-#callout-testimonials .content {
-	background: url(../images/icon_testimonial.png) no-repeat 260px 50px;
-}
-
-#callout-subscribe .content {
-	background: url(../images/icon_subscribe.png) no-repeat 260px 50px;
-	padding-right: 15px;
-	padding-top: 25px;
-}
-
-h2 {
-	font-size: 1.4em;
-	font-weight: bold;
-	margin-bottom: 5px;
-	font-weight: bold;
-}
-
-h2,
-h2 a {
-	/*color: #240f03;*/
-	color: #A45507;
-}
-
-.cufon-start h2 {
-	font-size: 20px;
-	font-weight: bold;
-	letter-spacing: -1px;
-	line-height: 1;
-}
-
-#callout blockquote {
-	background: url(../images/quote.png) no-repeat;
-	color: #9d897b;
-	font-size: 1.4em;
-	font-weight: bold;
-	font-style: normal;
-	margin: 0;
-	padding: 15px 20px 10px;
-	text-align: center;
-}
-
-.cufon-start #callout blockquote {
-	font-size: 25px;
-	letter-spacing: -1px;
-	line-height: 1;
-}
-
-#callout-subscribe h2 {
-	margin-bottom: 10px;
-}
-
-#callout-subscribe form {
-	text-align: right;
-	width: 230px;
-}
-
-#callout-subscribe input {
-	padding: 2px 4px;
-	width: 215px;
-}
-
-#callout-subscribe button {
-	background: transparent url(../images/button_subscribe.png) no-repeat;
-	border: 0;
-	height: 22px;
-	padding: 0;
-	width: 79px;
-}
-
-#callout-subscribe button span {
-	display: none;
-}
-
-.widget {
-	/*background: #fff url(../images/block.jpg) repeat-x left bottom;*/
-	float: left;
-	padding: 0;
-}
-
-.size1of3 {
-	width: 267px;
-	height: 283px;
-	padding: 45px 29px 0 39px;
-}
-
-#ie6 .size1of3 {
-	padding: 45px 10px 0 39px;
-}
-
-.size1of3 .img {
-	text-align: center;
-	position: relative;
-}
-
-.size1of3 .img img{
-left:-7px;
-position:relative;
-top:-15px;
-}
-
-.size1of3 .img .t,
-.size1of3 .img .b {
-	height: 22px;
-	background: url(../images/single-sprite.png) no-repeat right top;
-	position: relative;
-	z-index: 50;
-}
-
-.size1of3 .img .t {
-	width: 252px;
-}
-
-.size1of3 .img .b{
-	background-position: right -22px;
-	right:13px;
-	top:-30px;
-}
-
-.size1of3 h2 {
-
-	margin: -22px 0 0 0;
-
-	position: relative;
-}
-
-#content h2  {
-	background: url(../images/single-sprite.png) no-repeat -727px -53px;
-	width: 245px;
-	height: 40px;	
-	padding: 12px 0 0 22px;	
-	}
-
-.size1of3 h2 a{
-	text-decoration: none;
-	}
-
-.last {
-	margin: 0;
 }
 
 input,
