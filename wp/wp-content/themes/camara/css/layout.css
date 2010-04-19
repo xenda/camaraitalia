@@ -10,6 +10,16 @@ a {
 	color: #a4ce13;
 }
 
+a:link {
+	color:#33818C;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#264b66;
+}
+
+
 .post-more,
 .post-excerpt a {
 	color: #f11300;
@@ -173,6 +183,7 @@ Comienzo martin*/
 #content {
 	width:520px;
 	float:left;
+	min-height:650px;
 }
 
 /*fin martin
@@ -239,7 +250,7 @@ Comienzo martin*/
 	height:341px;
 }
 
-.home h2 {
+.home h1 {
 	color: #264B66;
 	font-size:1.85em;
 	text-align:center;
@@ -292,7 +303,6 @@ input {
  */
 #container {
 	background: #dedede url(../images/container-bg.png) center top  repeat-x;
-	min-height:1030px;
 	text-align: justify;
 	overflow: hidden;
 	z-index: 20;
@@ -303,237 +313,8 @@ input {
 input,
 select,
 textarea {
-	width: 70px;
 	border: solid 1px #cccccc;
 	background: #ffffff;
-}
-
-#types input,
-#q-listing input,
-#q-property input,
-#listing input,
-#property input {
-	border: none;
-	width: 15px;
-	height: 15px;
-}
-
-/**
- *  #form de real state
- *  @desc  Footer container, it has 2 rows with repeated content site wide
- *         It has FooterStick Alt support by "FooterStick Alt" by
- *         "Cameron Adams" http://themaninblue.com/experiment/footerStickAlt/
- */
-.search-home,
-.search-result,
-.house,
-.contact-agent {
-	margin-left:7px;
-	padding-left:0;
-	padding-right:0;
-	padding-top:0;
-	width:671px;
- }
- 
-.search-house h3,
-.search-result h3,
-.house h3,
-.contact-agent h3{
-	background: url(../images/let-help.png) no-repeat;
-	height: 43px;
-}
-
-.search-house h3 span,
-.search-result h3 span,
-.house h3 span,
-.contact-agent h3 span {
-	display:none;
-}
-
-.search-house form {
-	text-align: center;
-	background: #EBF5F9;
-	padding-left: 20px;
-	padding-bottom: 20px;
-}
-
-.search-house #search-terms {
-	width: 400px;
-	margin-left: 20px;
-	}
-	
-.search-house ul {
-	list-style:none;
-}
-.search-house ul li {
-	float: left;
-	margin-right: 10px;
-}
-
-.search-house fieldset {
-	margin-top: 10px;
-	margin-bottom: 15px;
-}
-
-.search-house fieldset.location {
-	padding-top: 10px;
-	}
-	
-.search-house fieldset#price {
-	margin-left: 20px;
-	}
-	
-.search-house fieldset#price p{
-	text-align: left;
-	}
-	
-.search-house fieldset#habitation{	
-	padding-left:30px;
-	padding-top:13px;
-}
-
-.search-house fieldset#listing legend,
-.search-house fieldset#property legend {
-	font-weight: bold;
-}
-
-.search-house fieldset#habitation label{
-	font-weight: bold;
-	}
-
-.search-house fieldset#another ul {
-	height: 38px;
-	margin-bottom:69px;
-	margin-top:2px;	
-	}
-	
-.search-house fieldset#another ul li {
-	margin-right: 20px;
-	font-weight: bold;
-	}
-	
-.search-house fieldset#another {
-	font-weight: bold;
-	margin-left: 56px;
-	}
-	
-.search-house fieldset#another .another{
-	text-align: left;
-	padding-bottom: 10px;
-	}
-	
-.search-house fieldset#another .another ul{
-	padding-left: 0;
-	margin-left: 0;
-	}	
-	
-.search-house fieldset#prices input,
-#another .another input {
-	background: url(../images/input-backgroung.png) no-repeat;
-	height:14px;
-	padding-bottom:7px;
-	padding-left:6px;
-	padding-right:6px;
-	padding-top:7px;
-	width:89px;	
-	border: none;
-	}
-
-.search-house .another {
-	height:55px;
-	}
-	
-.search-house .submit {
-	float: right;
-	margin-right: 30px;
-	width: 130px;
-	}
-
-.search-house fieldset#listing,
-.search-house fieldset#property{
-		text-align: left;
-	}
-	
-.search-house form div fieldset {
-	float: left;
-}
-
-.search-result #result-header{
-	background: #ebf5f9;
-	margin-bottom: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-.search-result .result-content{
-margin-bottom:10px;
-margin-top:0;
-padding-bottom:5px;
-padding-right:10px;
-padding-top:10px;
-width:627px;
-	height: 100px;
-	background: #ebf5f9;
-	}
-	
-.search-result .result-content img{
-	background: url(../images/img-background2.png) no-repeat;
-	padding-bottom:6px;
-	padding-left:2px;
-	padding-right:6px;
-	padding-top:1px;	
-	}	
-	
-.search-result ul {
-	list-style:none;
-}
-
-.search-result ul li.photo{
-	float: left;
-	width: 120px;
-}
-
-.search-result ul li{
-	float: left;
-	width: 94px;
-}
-
-.search-result .more-info{
-	float: left;
-	margin-top: 50px;
-	}
-
-.search-result .send-question{
-	float: right;
-	background: #80B80D url(../images/search_c.png) repeat-x;
-	margin-top:50px;	
-}
-
-.search-result .send-question a{
-	display: block;
-	color: #ffffff;
-	text-decoration: none;
-	height:23px;
-
-	padding-left:20px;
-	padding-right:20px;
-	padding-top:4px;
-	}
-
-#paginator .prev {
-	float: left;
-}
-
-#paginator .next {
-	float: right;
-}
-
-#paginator .pag {
-	float: right;
-}
-
-#paginator .pag li{
-	width: 10px;
 }
 
 /**
@@ -543,53 +324,37 @@ width:627px;
  *         "Cameron Adams" http://themaninblue.com/experiment/footerStickAlt/
  */
 #footer {
-	background:#DEDEDE url(../images/footer-bg.png) center top no-repeat;
+	background:url(../images/footer-bg.png) center top no-repeat;
 	color:#264B66;
 	font-size:11px;
 	position:relative;
 	padding-bottom:10px;
+	margin-top:10px;
 }
 
 .wrapper{
 	margin:0 auto;
 	padding-top:25px;
-	width:536px;	
-
+	width:690px;	
 }
 
-
-#foot-content {
-	margin:0 auto;
-	width: 960px;
+#footer a:link {
+	color:#33818C;
+	text-decoration:none;
 }
 
+#footer a:hover {
+	color:#264b66;
+}
+
+#footer #copy {
+	margin-top:10px;
+}
 
 #footer p {
 	margin: 0;
 }
 
-#foot-nav {
-	list-style: none;
-	margin: 0 0 0.25em;
-	overflow:hidden;
-}
-
-#foot-nav,
-#foot-nav * {
-	height: 1em;
-	line-height: 1;
-}
-
-#foot-nav li {
-	border-left: 1px solid #fff;
-	display: inline;
-	padding:0 4px 0 8px;
-}
-
-#foot-nav li.first {
-	border:0;
-	padding-left:0;
-}
 
 .post {
 	min-height: 250px;
@@ -601,6 +366,15 @@ h1 {
 	font-weight: bold;
 	letter-spacing: -1px;
 	margin: 0;
+}
+
+h3 {
+	color:#264B66;
+	font-size:14px;
+	font-weight:normal;
+	line-height:18px;
+	margin-bottom:8px;
+	margin-top:2px;	
 }
 
 .post-meta {
@@ -637,43 +411,29 @@ h1 {
 }
 
 a img {
-	background: #fff;
-	border: 1px solid #ccc;
-	color: #666;
-	padding: 2px;
 }
 
 .alignleft {
 	float: left;
-	margin: 0 1em 1em 0;
+	margin: 0 15px 0 0;
 }
 
 .alignright {
 	float: right;
-	margin: 0 0 1em 1em;
+	margin: 0 0 0 15px;
 }
 
 .alignnone {
 	clear: both;
 	float: none;
-	margin: 0 0 1em 0;
+	margin: 0;
 }
 
 .aligncenter {
 	clear: both;
 	float: none;
-	margin: 0 0 1em 0;
+	margin: 0;
 	text-align: center;
-}
-
-img.alignleft,
-img.alignright,
-img.aligncenter,
-img.alignnone {
-	background: #fff;
-	padding: 7px 8px;
-	border: 1px solid #666;
-	border-color: #ddd #bbb #bbb #ddd;
 }
 
 hr {
@@ -773,21 +533,108 @@ p.linklove {
 	display:none;
 	position:absolute;
 	top:35x;
+	padding-top:40px;
 }
+
+.page-template-opportunities-php .cat-name {
+	color:#264B66;
+	font-size:16px;
+	font-weight:bold;
+	line-height:24px;	
+}
+
+.page-template-opportunities-php .code {
+	font-size:12px;
+	line-height:16px;
+	text-align:left;
+	color:#666666;	
+	}
+
+.page-template-opportunities-php .email {
+	background: url('../images/contact-bg.png') no-repeat;
+	width:101px;
+	height:24px;
+	text-align:center;
+	line-height:24px;
+}
+
+.page-template-opportunities-php .email a{
+	display:block;
+	width:100%;
+	height:100%;
+	text-decoration:none !important;
+	color:#fff;
+	}
 
 .page #content {
 	width:500px;
 	padding-left:20px;
 }
 
-.page h2 {
+.page h1 {
+	color:#264B66;
+	font-weight:normal;
+	margin-bottom:8px;
+	text-transform:uppercase;
+	
 	font-size:1.85em;
 	line-height:1.3em;
 	margin-bottom:8px;
 	text-transform:uppercase;	
 }
 
-.page h2 a {
+.page h1 a {
 	color:#264B66;
 	text-decoration:none;
 }
+
+#directorio {
+	list-style:none;
+	width:400px;
+}
+
+#directorio li{
+	padding-top:10px;
+}
+
+#directorio span,
+#directorio strong {
+	float:left;
+	width:200px;
+}
+
+.page .socios {
+	list-style:square;
+}
+
+.page .socios li{
+	margin-top:10px;
+}
+
+.page .socios h4{
+	margin:0;
+}
+
+.page .title {
+	color:#264B66;
+	font-size:12px;
+	font-weight:bold;
+	line-height:16px;
+	margin:0;
+}
+
+.page .cargo {
+	color:#000000;
+	font-size:10px;
+	font-weight:bold;
+	line-height:16px;
+	margin:0;
+}
+
+.page .email {
+	margin-bottom:20px;
+}
+
+.page .email a {
+	text-decoration:underline;
+	}

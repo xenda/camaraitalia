@@ -23,9 +23,9 @@ h1,h2,h3,h4,h5,h6 { font-weight: normal; line-height: 1.1; margin-bottom: 0.5em;
 h1 { font-size: 1.6em; }
 h2 { font-size: 1.4em; }
 h3 { font-size: 1.2em; font-weight: bold; }
-h4 { font-size: 1.2em; font-weight: bold; font-style:italic; }
-h5 { font-size: 1.1em; font-weight: bold; }
-h6 { font-size: 1.1em; font-weight: bold; font-style:italic; }
+h4 { font-size: 1.05em; font-weight: bold; }
+h5 { font-size: 1em; font-weight: bold; }
+h6 { font-size: 1em; font-weight: bold; font-style:italic; }
 
 h1 img, h2 img, h3 img, 
 h4 img, h5 img, h6 img {

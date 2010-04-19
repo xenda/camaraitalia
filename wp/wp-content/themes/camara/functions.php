@@ -6,7 +6,7 @@
 $categories = array();
 $categories['opportunities'] = 5;
 $categories['partners'] = 8;
-//$categories['opportunities'] = 5;
+$categories['fairs'] = 8;
 
 function get_first_letter($value){
 	return strtolower(substr($value, 0, 1));
@@ -18,12 +18,15 @@ function get_first_letter($value){
  * @return HTML content to display css.
  */
 function load_css($theme_url) {
+	echo '<link rel="stylesheet" type="text/css" media="screen" href="'. $theme_url . '/css/styles.css.php" />';
+	/*
 	if (in_array(@$_SERVER['SERVER_ADDR'], array('192.168.0.2', '192.168.0.22','127.0.0.1', '::1'))){
 		//localhost
 		echo '<link rel="stylesheet" type="text/css" media="screen" href="'. $theme_url . '/css/styles.css.php" />';
 	} else {
 		echo '<link rel="stylesheet" type="text/css" media="screen" href="'. $theme_url . '/css/styles.css" />';
 	}
+	*/
 }
 
 /**
@@ -31,11 +34,14 @@ function load_css($theme_url) {
  * @return HTML content to display css.
  */
 function load_js($theme_url) {
+	echo '<script type="text/javascript" src="'. $theme_url . '/js/scripts.js.php"></script>';
+	/*
 	if (in_array(@$_SERVER['SERVER_ADDR'], array('192.168.0.2', '192.168.0.22','127.0.0.1', '::1'))){
 		echo '<script type="text/javascript" src="'. $theme_url . '/js/scripts.js.php"></script>';
 	} else {
 		echo '<script type="text/javascript" src="'. $theme_url . '/js/scripts.js"></script>';	
 	}
+	*/
 }
 
 if ( function_exists('register_sidebar') ) {

@@ -11,7 +11,7 @@ Template Name: Oportunidades
 		<?php the_post(); ?>
 	
 				<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-					<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+					<h1><?php the_title(); ?></h1>
 	
 					<div class="entry">
 					
@@ -31,16 +31,19 @@ Template Name: Oportunidades
 					<?php foreach ($categories as $cat): ?>
 						<?php $args['cat'] = $cat->cat_ID; ?>
 						<div id="cat-<?php echo $cat->cat_ID?>" class="dropdown-content">
-						<?php $my_query = new WP_Query($args); ?>
-						<?php if( $my_query->have_posts() ): ?>
-							<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-								<?php $custom_fields = get_post_custom(get_the_ID()); ?>
-								<h2><?php echo $custom_fields['code'][0]; ?></h2>
-								<?php the_content(); ?>
-								<a href="mailto:<?php echo $custom_fields['email'][0]; ?>"><?php echo _e('<!--:it-->Contattare<!--:--><!--:es-->Contactar<!--:-->')?></a>
-							<?php endwhile; ?>
-						<?php endif; ?>
-						<?php unset($my_query); ?>
+							<div class="cat-name"><?php echo $cat->cat_name; ?></div>
+							<?php $my_query = new WP_Query($args); ?>
+							<?php if( $my_query->have_posts() ): ?>
+								<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+									<?php $custom_fields = get_post_custom(get_the_ID()); ?>
+									<div class="code"><?php echo _e("<!--:it-->Código<!--:--><!--:es-->Código<!--:-->"); ?>: <?php echo $custom_fields['code'][0]; ?></div>
+									<?php the_content(); ?>
+									<?php if ($custom_fields['email'][0] != null): ?>
+										<div class="email"><a href="mailto:<?php echo $custom_fields['email'][0]; ?>"><?php echo _e('<!--:it-->Contattare<!--:--><!--:es-->Contactar<!--:-->')?></a></div>
+									<?php endif; ?>
+								<?php endwhile; ?>
+							<?php endif; ?>
+							<?php unset($my_query); ?>
 						</div>
 					<?php endforeach; ?>
 					</div>
@@ -51,5 +54,5 @@ Template Name: Oportunidades
 		<?php get_sidebar('right'); ?>		
 		
 		<div class="clear"></div>
+		<?php get_footer(); ?>
 	</div>
-<?php get_footer(); ?>

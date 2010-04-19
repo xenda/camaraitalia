@@ -43,5 +43,5 @@ get_header(); ?>
 		<?php get_sidebar('right'); ?>		
 		
 		<div class="clear"></div>
+		<?php get_footer(); ?>
 	</div>
-<?php get_footer(); ?>

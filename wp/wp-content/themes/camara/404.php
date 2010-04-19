@@ -4,15 +4,20 @@
  * @subpackage Default_Theme
  */
 
-get_header();
-?>
+get_header(); ?>
+	<div id="container">
+		<?php get_sidebar('left'); ?>
+		<div id="content">
+	
 
-	<div id="content" class="narrowcolumn">
-
-		<h2 class="center">Error 404 - Not Found</h2>
-
+			<h2 class="center">Not Found</h2>
+			<p class="center">Sorry, but you are looking for something that isn't here.</p>
+			<?php get_search_form(); ?>
+	
+	
+		</div>		
+		<?php get_sidebar('right'); ?>		
+		
+		<div class="clear"></div>
+		<?php get_footer(); ?>
 	</div>
-
-<?php get_sidebar(); ?>
-
-<?php get_footer(); ?>

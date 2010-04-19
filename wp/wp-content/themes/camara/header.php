@@ -33,7 +33,7 @@
 	<div id="header">
 		<div id="corner-right"></div>
 		<div id="corner-logo">
-			<h1 id="head-logo"><a href="<?php bloginfo('home'); ?>" ><span><?php bloginfo('name'); ?></span></a></h1>
+			<h2 id="head-logo"><a href="<?php bloginfo('home'); ?>" ><span><?php bloginfo('name'); ?></span></a></h2>
 		</div>
 		<div class="description"><?php bloginfo('description'); ?></div>
 		<div id="head-menu">
