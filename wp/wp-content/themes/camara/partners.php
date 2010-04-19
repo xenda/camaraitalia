@@ -11,7 +11,7 @@ Template Name: Socios
 		<?php the_post(); ?>
 	
 				<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-					<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+					<h1><?php the_title(); ?></h1>
 	
 					<div class="entry">
 					
@@ -46,7 +46,7 @@ Template Name: Socios
 									<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 										<?php $custom_fields = get_post_custom(get_the_ID()); ?>
 										<li class="cat-<?php echo $cat->cat_ID; ?> letter-<?php echo get_first_letter(get_the_title()); ?>">
-											<h2><?php the_title(); ?></h2>
+											<h3><?php the_title(); ?></h3>
 											<p><?php echo _e("<!--:it-->Settore<!--:--><!--:es-->Sector<!--:-->"); ?>: <?php echo $cat->cat_name; ?></p>
 											<?php the_content(); ?>
 											<?php if ($custom_fields['email'][0] != null): ?>

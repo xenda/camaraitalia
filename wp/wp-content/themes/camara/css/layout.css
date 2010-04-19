@@ -529,6 +529,10 @@ p.linklove {
 	position:relative;
 }
 
+/*
+Oportunidades
+*/
+
 .page-template-opportunities-php .dropdown-content {
 	display:none;
 	position:absolute;
@@ -540,7 +544,8 @@ p.linklove {
 	color:#264B66;
 	font-size:16px;
 	font-weight:bold;
-	line-height:24px;	
+	line-height:24px;
+	margin-bottom:10px;
 }
 
 .page-template-opportunities-php .code {
@@ -564,6 +569,38 @@ p.linklove {
 	height:100%;
 	text-decoration:none !important;
 	color:#fff;
+	}
+
+.page-template-opportunities-php hr{
+	border-style:solid none none;
+	border-top:1px solid #CCCCCC;
+	clear:both;
+	display:block;
+	height:1px;
+	margin:20px 0;
+}
+
+/*
+Socios
+*/
+
+.page-template-partners-php ul {
+	list-style:square;
+}
+
+.page-template-partners-php .dropdown-content li {
+	margin-top:11px;
+}
+
+.page-template-partners-php .dropdown-content h3 {
+	font-size:14px;
+	margin:0;
+	color:#000;
+}
+
+.page-template-partners-php .dropdown-content p {
+	margin:0;
+	font-size:11px;
 	}
 
 .page #content {
@@ -638,3 +675,21 @@ p.linklove {
 .page .email a {
 	text-decoration:underline;
 	}
+
+#ad p{
+	color: #000;
+	font-size:11px;
+}
+
+#ad p img {
+	margin: 0 15px 15px 0;
+}
+
+#ad p.p_dx_claro {
+	padding-right:20px;
+}
+
+#ad .title_dx {
+	margin: 20px 0 10px 0;
+	font-size:16px;
+}

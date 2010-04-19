@@ -41,13 +41,22 @@ Template Name: Oportunidades
 									<?php if ($custom_fields['email'][0] != null): ?>
 										<div class="email"><a href="mailto:<?php echo $custom_fields['email'][0]; ?>"><?php echo _e('<!--:it-->Contattare<!--:--><!--:es-->Contactar<!--:-->')?></a></div>
 									<?php endif; ?>
+									<hr />
 								<?php endwhile; ?>
 							<?php endif; ?>
 							<?php unset($my_query); ?>
 						</div>
 					<?php endforeach; ?>
 					</div>
-	
+					<!-- 
+					<div class="contact">
+						<?php
+						$lang['it'] = 'Se desidera contattarsi con qualcuna di queste imprese, si comunichi con l’ufficio commerciale. <a href="mailto:oficinacomercial@cameritpe.com">oficinacomercial@cameritpe.com</a>, <br />tel/fax: (00511) 445-4278/4471785,interno 108, <br /><strong>facendo riferimento al codice a lato.</strong>.';
+						$lang['es'] = 'Si desea contactarse con alguna de estas empresas, comuníquese con el departamento comercial. <a href="mailto:oficinacomercial@cameritpe.com">oficinacomercial@cameritpe.com</a>, <br />tel/fax: (00511) 445-4278 / 447-1785 anexo 108, <br /><strong>mencionando el código de referencia</strong>.';
+						echo _e("<!--:it-->" . $lang['it'] . "<!--:--><!--:es-->" . $lang['es'] . "<!--:-->");
+						?>
+					</div>
+					 -->
 				</div>
 	
 		</div>		
