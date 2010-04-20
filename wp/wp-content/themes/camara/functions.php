@@ -6,7 +6,9 @@
 $categories = array();
 $categories['opportunities'] = 5;
 $categories['partners'] = 8;
-$categories['fairs'] = 8;
+$categories['fairs'] = 82;
+$categories['network'] = 84;
+
 
 function get_first_letter($value){
 	return strtolower(substr($value, 0, 1));

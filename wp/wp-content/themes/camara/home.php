@@ -19,7 +19,7 @@ get_header(); ?>
 		</div>		
 
 		<?php get_sidebar('right'); ?>		
-		
+		<?php get_sidebar('footer'); ?>		
 		<div class="clear"></div>
 		<?php get_footer(); ?>
 	</div>
