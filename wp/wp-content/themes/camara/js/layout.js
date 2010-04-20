@@ -66,7 +66,25 @@ Site = {
 			if ($('.page-template-partners-php .dropdown').val() != 'none') {
 				$('.page-template-partners-php .dropdown').change();
 			}
-		
+
+			
+			//Socios
+			$('.page-template-data-php .dropdown').change(function () {
+				
+				$('.dropdown-content').fadeOut();
+				if ($(this).val() == 'none'){
+					$('.dropdown-content').fadeIn();					
+					return false;
+				}
+				
+				var id = '#' + $(this).val();
+				$(id).fadeIn();
+	
+			});
+			
+			if ($('.page-template-data-php .dropdown').val() != 'none') {
+				$('.page-template-data-php .dropdown').change();
+			}			
 	},
 	init: function(){
 		

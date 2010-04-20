@@ -16,7 +16,7 @@ Template Name: Socios
 					<div class="entry">
 					
 						<?php $args = array(); ?>
-						<?php $args['child_of'] = $categories['fairs']; ?>
+						<?php $args['child_of'] = $categories['faires']; ?>
 						<?php $categories = get_categories( $args ); ?> 
 						Por sector
 						<select id="sector" class="dropdown">

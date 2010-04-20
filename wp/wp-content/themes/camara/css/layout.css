@@ -603,9 +603,32 @@ Socios
 	font-size:11px;
 	}
 
+
+/*
+Datos economicos
+*/
+
+.page-template-data-php .dropdown-content {
+	display:none;
+	position:absolute;
+	top:35x;
+	padding-top:40px;
+}
+
+.page-template-data-php .post-name {
+	color:#264B66;
+	font-size:16px;
+	font-weight:bold;
+	line-height:24px;
+	margin-bottom:10px;
+}
+
+
+
+
 .page #content {
-	width:500px;
-	padding-left:20px;
+	width:480px;
+	padding:0 20px;
 }
 
 .page h1 {
@@ -674,6 +697,14 @@ Socios
 
 .page .email a {
 	text-decoration:underline;
+	}
+
+.page-id-23 ol ul {
+	list-style: circle;
+}
+
+.page-id-23 ul {
+	list-style:square;
 	}
 
 #ad p{

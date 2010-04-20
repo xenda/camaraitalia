@@ -6,7 +6,8 @@
 $categories = array();
 $categories['opportunities'] = 5;
 $categories['partners'] = 8;
-$categories['fairs'] = 82;
+$categories['data'] = 53;
+$categories['faires'] = 82;
 $categories['network'] = 84;
 
 
