@@ -18,23 +18,27 @@ Template Name: Socios
 						<?php $args = array(); ?>
 						<?php $args['child_of'] = $categories['faires']; ?>
 						<?php $categories = get_categories( $args ); ?> 
-						Por sector
-						<select id="main-combo" class="dropdown">
-							<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
-							<?php foreach ($categories as $cat): ?>
-								<option value="cat-<?php echo $cat->cat_ID; ?>"><?php echo $cat->cat_name; ?></option>
-							<?php endforeach; ?>
-						</select>
-			
-						<?php echo _e("<!--:it-->[Meze]<!--:--><!--:es-->[Por mes]<!--:-->"); ?>:
-						
-						<select id="second-combo" class="dropdown">
-							<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
-							<?php foreach($months[$q_config['language']] as $key => $value): ?>
-								<option value="month-<?php echo $key; ?>"><?php echo $value; ?></option>
-							<?php endforeach; ?>
-						</select>
-												
+						<div class="combos">
+							<div class="combo">
+							<?php echo _e("<!--:it-->Area<!--:--><!--:es-->Por área<!--:-->"); ?>:
+							<select id="main-combo" class="dropdown">
+								<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
+								<?php foreach ($categories as $cat): ?>
+									<option value="cat-<?php echo $cat->cat_ID; ?>"><?php echo $cat->cat_name; ?></option>
+								<?php endforeach; ?>
+							</select>
+				
+							</div>
+							<div class="combo">
+							<?php echo _e("<!--:it-->Meze<!--:--><!--:es-->Por mes<!--:-->"); ?>:			
+							<select id="second-combo" class="dropdown">
+								<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
+								<?php foreach($months[$q_config['language']] as $key => $value): ?>
+									<option value="month-<?php echo $key; ?>"><?php echo $value; ?></option>
+								<?php endforeach; ?>
+							</select>
+							</div>
+						</div>												
 						<?php $args = array(); ?>
 						<?php $args['showposts'] = -1; ?>
 						<div class="dropdown-content">

@@ -666,6 +666,35 @@ Datos economicos
 }
 
 
+/*
+Ferias
+*/
+
+.page-template-faires-php .combos {
+	height:68px;
+}
+
+.page-template-faires-php .combos .combo{
+	padding:5px;
+}
+
+.page-template-faires-php #main-combo_msdd {
+	width:350px !important;
+}
+
+.page-template-faires-php #main-combo_msdd .ddChild {
+	width:348px !important;
+}
+
+.page-template-faires-php #second-combo_msdd {
+	width:120px !important;
+}
+
+.page-template-faires-php #second-combo_msdd .ddChild {
+	width:118px !important;
+}
+
+
 
 
 body.page-template-data-php #content,
@@ -690,6 +719,9 @@ Publicaciones
 	font-weight:normal;
 	margin:0;
 }
+
+
+
 
 .page #content {
 	width:480px;
