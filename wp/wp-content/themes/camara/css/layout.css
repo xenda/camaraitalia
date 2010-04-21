@@ -654,6 +654,7 @@ Datos economicos
 
 
 .page-template-data-php .dd,
+.page-template-network-php .dd,
 .page-template-opportunities-php .dd {
 	float:left;
 	margin:0;
@@ -661,6 +662,7 @@ Datos economicos
 }
 
 .page-template-data-php .dd .ddChild,
+.page-template-network-php .dd .ddChild,
 .page-template-opportunities-php .dd .ddChild{
 	width:326px !important;
 }
@@ -747,6 +749,9 @@ Publicaciones
 }
 
 
+.page-template-network-php ul {
+	list-style:none;
+}
 
 
 .page #content {
