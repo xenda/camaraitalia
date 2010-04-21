@@ -694,7 +694,33 @@ Ferias
 	width:118px !important;
 }
 
+.page-template-faires-php ul {
+	list-style:none;
+	margin:0 4px;
+}
 
+.page-template-faires-php .meta {
+	margin-top:5px;
+	margin-bottom:10px;
+}
+
+.page-template-faires-php p{
+	margin:0;
+}
+
+.page-template-faires-php h3 {
+	color:#264B66;
+	font-size:16px;
+	font-weight:bold;
+	margin:0;
+}
+
+.page-template-faires-php .date {
+	float:right;
+	font-size:11px;
+	font-weight:bold;
+	color:#264B66;
+}
 
 
 body.page-template-data-php #content,

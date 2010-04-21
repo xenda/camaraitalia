@@ -21,7 +21,7 @@ Template Name: Socios
 						<div class="combos">
 							<div class="combo">
 							<?php echo _e("<!--:it-->Area<!--:--><!--:es-->Por área<!--:-->"); ?>:
-							<select id="main-combo" class="dropdown">
+							<select id="main-combo" class="dropdown" onchange="partners(this, 'second-combo', 'list')">
 								<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
 								<?php foreach ($categories as $cat): ?>
 									<option value="cat-<?php echo $cat->cat_ID; ?>"><?php echo $cat->cat_name; ?></option>
@@ -31,10 +31,12 @@ Template Name: Socios
 							</div>
 							<div class="combo">
 							<?php echo _e("<!--:it-->Meze<!--:--><!--:es-->Por mes<!--:-->"); ?>:			
-							<select id="second-combo" class="dropdown">
+							<select id="second-combo" class="dropdown" onchange="partners(this, 'main-combo', 'list')">
 								<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
 								<?php foreach($months[$q_config['language']] as $key => $value): ?>
-									<option value="month-<?php echo $key; ?>"><?php echo $value; ?></option>
+									<?php $to_show = $key + 1; ?>
+									<?php if ($to_show <= 9) $to_show = '0' . $to_show; ?>
+									<option value="month-<?php echo $to_show; ?>"><?php echo $value; ?></option>
 								<?php endforeach; ?>
 							</select>
 							</div>
@@ -42,7 +44,7 @@ Template Name: Socios
 						<?php $args = array(); ?>
 						<?php $args['showposts'] = -1; ?>
 						<div class="dropdown-content">
-							<ul>			
+							<ul id="list">			
 							<?php foreach ($categories as $cat): ?>
 								<?php $args['cat'] = $cat->cat_ID; ?>
 		
@@ -50,13 +52,21 @@ Template Name: Socios
 								<?php if( $my_query->have_posts() ): ?>
 									<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 										<?php $custom_fields = get_post_custom(get_the_ID()); ?>
-										<li class="cat-<?php echo $cat->cat_ID; ?> letter-<?php echo get_first_letter(get_the_title()); ?>">
-											<h3><?php the_title(); ?></h3>
-											<p><?php echo _e("<!--:it-->Settore<!--:--><!--:es-->Sector<!--:-->"); ?>: <?php echo $cat->cat_name; ?></p>
+										<li class="cat-<?php echo $cat->cat_ID; ?> month-<?php the_time('m'); ?>">
+											<div class="meta">
+												<?php if ($custom_fields['fecha'][0] != null): ?>
+													<div class="date"><?php echo $custom_fields['fecha'][0]; ?></div>
+												<?php endif; ?>											
+												<h3><?php the_title(); ?></h3>
+											</div>
 											<?php the_content(); ?>
 											<?php if ($custom_fields['email'][0] != null): ?>
 												E-mail: <a href="mailto:<?php echo $custom_fields['email'][0]; ?>"><?php echo $custom_fields['email'][0]; ?></a>
 											<?php endif; ?>
+											<?php if ($custom_fields['web'][0] != null): ?>
+												<a href="<?php echo $custom_fields['web'][0]; ?>" title="<?php the_title(); ?>"><?php echo $custom_fields['web'][0]; ?></a>
+											<?php endif; ?>
+											<hr />										
 										</li>
 									<?php endwhile; ?>
 								<?php endif; ?>
