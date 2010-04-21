@@ -19,21 +19,25 @@ Template Name: Socios
 						<?php $args['child_of'] = $categories['partners']; ?>
 						<?php $categories = get_categories( $args ); ?>
 						<div class="combos">
-							Por sector
-							<select id="main-combo" class="dropdown" onchange="partners(this, 'second-combo', 'list')">
-								<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
-								<?php foreach ($categories as $cat): ?>
-									<option value="cat-<?php echo $cat->cat_ID; ?>"><?php echo $cat->cat_name; ?></option>
-								<?php endforeach; ?>
-							</select>
-			
-							Alfabetico
-							<select id="second-combo" class="dropdown" onchange="partners(this, 'main-combo', 'list')">
-								<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
-								<?php for($x = 65; $x <= 90; $x++): ?>
-									<option value="letter-<?php echo strtolower(chr($x)); ?>"><?php echo chr($x); ?></option>
-								<?php endfor; ?>
-							</select>
+							<div class="to-left">
+								<?php echo _e("<!--:it-->Settore<!--:--><!--:es-->Por sector<!--:-->"); ?>:
+								<select id="main-combo" class="dropdown" onchange="partners(this, 'second-combo', 'list')">
+									<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
+									<?php foreach ($categories as $cat): ?>
+										<option value="cat-<?php echo $cat->cat_ID; ?>"><?php echo $cat->cat_name; ?></option>
+									<?php endforeach; ?>
+								</select>
+							</div>
+							<div class="to-right">
+								<?php echo _e("<!--:it-->Ordine alfabetico<!--:--><!--:es-->Alfabetico<!--:-->"); ?>:
+								<select id="second-combo" class="dropdown" onchange="partners(this, 'main-combo', 'list')">
+									<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
+									<?php for($x = 65; $x <= 90; $x++): ?>
+										<option value="letter-<?php echo strtolower(chr($x)); ?>"><?php echo chr($x); ?></option>
+									<?php endfor; ?>
+								</select>
+							</div>
+							<div class="clear"></div>
 						</div>	
 						<?php $args = array(); ?>
 						<?php $args['showposts'] = -1; ?>

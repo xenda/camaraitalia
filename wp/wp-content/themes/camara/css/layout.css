@@ -537,6 +537,15 @@ Oportunidades
 	display:none;
 }
 
+.page-template-opportunities-php .dd {
+	float:left;
+	margin:0;
+}
+
+.page-template-opportunities-php .contact {
+	margin-top:30px;
+}
+
 .page-template-opportunities-php .cat-name {
 	color:#264B66;
 	font-size:16px;
@@ -717,4 +726,17 @@ Datos economicos
 #ad .title_dx {
 	margin: 20px 0 10px 0;
 	font-size:16px;
+}
+
+.to-left {
+	float:left;
+}
+
+.to-right {
+	float:right;
+}
+
+.combos {
+	height:24px;
+	line-height:24px;
 }
