@@ -153,3 +153,61 @@ margin-right:5px;
 text-align:center;
 width:80px;
 }
+
+
+.table4_variaciones {
+background-color:#FFFFFF;
+height:570px;
+margin:0 auto 20px auto;
+padding-top:5px;
+width:480px;
+}
+
+.filatitle12 {
+background-color:white;
+border:1px solid #DFDFDF;
+color:#000000;
+float:left;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:12px;
+font-weight:normal;
+height:38px;
+margin-bottom:5px;
+margin-left:7px;
+text-align:center;
+width:140px;
+}
+
+.filatitle11 {
+border:1px solid #DFDFDF;
+color:#000000;
+float:left;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:12px;
+font-weight:normal;
+height:38px;
+margin-bottom:5px;
+margin-left:7px;
+text-align:center;
+width:56px;
+}
+
+.contentrad {
+float:left;
+margin-top:5px;
+width:545px;
+}
+
+.filatitle12b {
+border:1px solid #DFDFDF;
+color:#000000;
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+font-weight:normal;
+height:50px;
+margin-bottom:5px;
+margin-left:7px;
+text-align:center;
+width:140px;
+}

@@ -430,10 +430,10 @@ a img {
 }
 
 .aligncenter {
-	clear: both;
-	float: none;
-	margin: 0;
-	text-align: center;
+	display:block;
+	float:none;
+	margin:0 auto;
+	text-align:center;
 }
 
 hr {
@@ -620,12 +620,21 @@ Datos economicos
 }
 
 .page-template-data-php h3 {
-	font-size:12px;
+	font-size:14px;
 	font-weight:bold;
 }
 
 .page-template-data-php h1 {
 	margin-bottom:20px;
+}
+
+.page-template-data-php h4 {
+	color:#264B66;
+	font-size:13px;
+	font-weight:normal;
+	line-height:18px;
+	margin-bottom:8px;
+	margin-top:2px;
 }
 
 .page-template-data-php .post-name {
