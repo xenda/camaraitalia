@@ -46,11 +46,12 @@ Template Name: Socios
 							<?php $var = 0; ?>	
 							<?php foreach ($categories as $cat): ?>
 								<?php $args['cat'] = $cat->cat_ID; ?>
-								<?php $var++; ?>
+								
 								<?php $my_query = new WP_Query($args); ?>
 								<?php if( $my_query->have_posts() ): ?>
 									<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 										<?php $custom_fields = get_post_custom(get_the_ID()); ?>
+										<?php $var++; ?>
 										<li id="item-<?php echo $var; ?>" class="cat-<?php echo $cat->cat_ID; ?> letter-<?php echo get_first_letter(get_the_title()); ?>">
 											<h3><?php the_title(); ?></h3>
 											<p><?php echo _e("<!--:it-->Settore<!--:--><!--:es-->Sector<!--:-->"); ?>: <?php echo $cat->cat_name; ?></p>

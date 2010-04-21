@@ -44,7 +44,8 @@ Template Name: Socios
 						<?php $args = array(); ?>
 						<?php $args['showposts'] = -1; ?>
 						<div class="dropdown-content">
-							<ul id="list">			
+							<ul id="list">
+							<?php $var = 0; ?>
 							<?php foreach ($categories as $cat): ?>
 								<?php $args['cat'] = $cat->cat_ID; ?>
 		
@@ -52,7 +53,8 @@ Template Name: Socios
 								<?php if( $my_query->have_posts() ): ?>
 									<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 										<?php $custom_fields = get_post_custom(get_the_ID()); ?>
-										<li class="cat-<?php echo $cat->cat_ID; ?> month-<?php the_time('m'); ?>">
+										<?php $var++; ?>
+										<li id="item-<?php echo $var; ?>" class="cat-<?php echo $cat->cat_ID; ?> month-<?php the_time('m'); ?>">
 											<div class="meta">
 												<?php if ($custom_fields['fecha'][0] != null): ?>
 													<div class="date"><?php echo $custom_fields['fecha'][0]; ?></div>
@@ -61,7 +63,7 @@ Template Name: Socios
 											</div>
 											<?php the_content(); ?>
 											<?php if ($custom_fields['email'][0] != null): ?>
-												E-mail: <a href="mailto:<?php echo $custom_fields['email'][0]; ?>"><?php echo $custom_fields['email'][0]; ?></a>
+												<a href="mailto:<?php echo $custom_fields['email'][0]; ?>"><?php echo $custom_fields['email'][0]; ?></a>
 											<?php endif; ?>
 											<?php if ($custom_fields['web'][0] != null): ?>
 												<a href="<?php echo $custom_fields['web'][0]; ?>" title="<?php the_title(); ?>"><?php echo $custom_fields['web'][0]; ?></a>

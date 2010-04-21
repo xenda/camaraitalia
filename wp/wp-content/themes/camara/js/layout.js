@@ -64,6 +64,7 @@ function oportunidades(combo) {
 }
 
 function partners(combo, another, list) {
+
 	list = document.getElementById(list);
 	
 	for (var i in list.childNodes){
