@@ -33,9 +33,9 @@ Site = {
 	combos: function(){
 		
 		$('#main-combo').msDropDown();
-		$('#sector').msDropDown();
-		$('#month').msDropDown();
-		$('#alfabetico').msDropDown();
+		$('#second-combo').msDropDown();
+		//$('#month').msDropDown();
+		//$('#alfabetico').msDropDown();
 	},
 	init: function(){
 		
@@ -62,4 +62,26 @@ function oportunidades(combo) {
 		document.getElementById(combo.value).style.display="block";
 	}
 	
+}
+
+function partners(combo, another, list) {
+	list = document.getElementById(list);
+	
+	for (var i in list.childNodes){
+
+		if (list.childNodes[i].id != undefined) {
+			
+			className = list.childNodes[i].className; 
+			if (className.search(combo.value) != -1) {
+				document.getElementById(list.childNodes[i].id).style.display="block";
+			}
+			else {
+				document.getElementById(list.childNodes[i].id).style.display="none";
+			}
+		}
+	}
+	
+	//another.selectedIndex = 0;
+	
+	//alert(list.childNodes.length);
 }

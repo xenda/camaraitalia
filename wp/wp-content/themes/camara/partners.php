@@ -17,35 +17,37 @@ Template Name: Socios
 					
 						<?php $args = array(); ?>
 						<?php $args['child_of'] = $categories['partners']; ?>
-						<?php $categories = get_categories( $args ); ?> 
-						Por sector
-						<select id="sector" class="dropdown">
-							<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
-							<?php foreach ($categories as $cat): ?>
-								<option value="cat-<?php echo $cat->cat_ID; ?>"><?php echo $cat->cat_name; ?></option>
-							<?php endforeach; ?>
-						</select>
+						<?php $categories = get_categories( $args ); ?>
+						<div class="combos">
+							Por sector
+							<select id="main-combo" class="dropdown" onchange="partners(this, 'second-combo', 'list')">
+								<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
+								<?php foreach ($categories as $cat): ?>
+									<option value="cat-<?php echo $cat->cat_ID; ?>"><?php echo $cat->cat_name; ?></option>
+								<?php endforeach; ?>
+							</select>
 			
-						Alfabetico
-						<select id="alfabetico" class="dropdown">
-							<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
-							<?php for($x = 65; $x <= 90; $x++): ?>
-								<option value="letter-<?php echo strtolower(chr($x)); ?>"><?php echo chr($x); ?></option>
-							<?php endfor; ?>
-						</select>
-												
+							Alfabetico
+							<select id="second-combo" class="dropdown" onchange="partners(this, 'main-combo', 'list')">
+								<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
+								<?php for($x = 65; $x <= 90; $x++): ?>
+									<option value="letter-<?php echo strtolower(chr($x)); ?>"><?php echo chr($x); ?></option>
+								<?php endfor; ?>
+							</select>
+						</div>	
 						<?php $args = array(); ?>
 						<?php $args['showposts'] = -1; ?>
 						<div class="dropdown-content">
-							<ul>			
+							<ul id="list">
+							<?php $var = 0; ?>	
 							<?php foreach ($categories as $cat): ?>
 								<?php $args['cat'] = $cat->cat_ID; ?>
-		
+								<?php $var++; ?>
 								<?php $my_query = new WP_Query($args); ?>
 								<?php if( $my_query->have_posts() ): ?>
 									<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 										<?php $custom_fields = get_post_custom(get_the_ID()); ?>
-										<li class="cat-<?php echo $cat->cat_ID; ?> letter-<?php echo get_first_letter(get_the_title()); ?>">
+										<li id="item-<?php echo $var; ?>" class="cat-<?php echo $cat->cat_ID; ?> letter-<?php echo get_first_letter(get_the_title()); ?>">
 											<h3><?php the_title(); ?></h3>
 											<p><?php echo _e("<!--:it-->Settore<!--:--><!--:es-->Sector<!--:-->"); ?>: <?php echo $cat->cat_name; ?></p>
 											<?php the_content(); ?>
