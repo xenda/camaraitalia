@@ -81,3 +81,22 @@ function partners(combo, another, list) {
 		}
 	}
 }
+
+function network(combo, list) {
+
+	list = document.getElementById(list);
+	
+	for (var i in list.childNodes){
+
+		if (list.childNodes[i].id != undefined) {
+			
+			className = list.childNodes[i].className; 
+			if (className.search(combo.value) != -1) {
+				document.getElementById(list.childNodes[i].id).style.display="block";
+			}
+			else {
+				document.getElementById(list.childNodes[i].id).style.display="none";
+			}
+		}
+	}
+}

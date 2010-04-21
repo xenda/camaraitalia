@@ -16,21 +16,23 @@ Template Name: Red de Camaras
 					<div class="entry">
 					
 						<?php $args = array(); ?>
-						<?php $args['child_of'] = $categories['network']; ?>
-						<?php $args['hierarchical'] = false; ?>
+						<?php $args['parent'] = $categories['network']; ?>
 						<?php $categories = get_categories( $args ); ?> 
-						Por sector
-						<select id="sector" class="dropdown">
-							<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
-							<?php foreach ($categories as $cat): ?>
-								<option value="cat-<?php echo $cat->cat_ID; ?>"><?php echo $cat->cat_name; ?></option>
-							<?php endforeach; ?>
-						</select>
-															
+						
+						<div class="combos">
+							<select id="main-combo" class="dropdown" onchange="network(this, 'list')">
+								<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
+								<?php foreach ($categories as $cat): ?>
+									<option value="cat-<?php echo $cat->cat_ID; ?>"><?php echo $cat->cat_name; ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+										
 						<?php $args = array(); ?>
 						<?php $args['showposts'] = -1; ?>
 						<div class="dropdown-content">
-							<ul>			
+							<ul id="list">
+							<?php $var = 0; ?>		
 							<?php foreach ($categories as $cat): ?>
 								<?php $args['cat'] = $cat->cat_ID; ?>
 		
@@ -38,7 +40,8 @@ Template Name: Red de Camaras
 								<?php if( $my_query->have_posts() ): ?>
 									<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 										<?php $custom_fields = get_post_custom(get_the_ID()); ?>
-										<li class="cat-<?php echo $cat->cat_ID; ?> letter-<?php echo get_first_letter(get_the_title()); ?>">
+										<?php $var++; ?>
+										<li id="item-<?php echo $var; ?>" class="cat-<?php echo $cat->cat_ID; ?>">
 											<h3><?php the_title(); ?></h3>
 											<p><?php echo _e("<!--:it-->Settore<!--:--><!--:es-->Sector<!--:-->"); ?>: <?php echo $cat->cat_name; ?></p>
 											<?php the_content(); ?>
