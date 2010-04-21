@@ -9,6 +9,7 @@ $categories['partners'] = 8;
 $categories['data'] = 53;
 $categories['faires'] = 54;
 $categories['network'] = 84;
+$categories['publications'] = 92;
 
 
 $months['es'][] = 'Enero';

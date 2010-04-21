@@ -613,8 +613,6 @@ Datos economicos
 	display:none;
 }
 
-
-
 .page-template-data-php .combos {
 	margin-bottom:30px;
 }
@@ -670,8 +668,27 @@ Datos economicos
 
 
 
-body.page-template-data-php #content {
+body.page-template-data-php #content,
+body.page-template-publications-php #content{
 	width:700px;
+}
+
+/*
+Publicaciones
+*/
+
+.page-template-publications-php .magazine{
+	float:left;
+	border: solid 2px #000;
+	padding:12px;
+	margin:5px 25px;
+}
+
+.page-template-publications-php .magazine h2 {
+	text-align:center;
+	font-size:16px;
+	font-weight:normal;
+	margin:0;
 }
 
 .page #content {
