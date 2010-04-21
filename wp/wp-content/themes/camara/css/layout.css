@@ -537,11 +537,6 @@ Oportunidades
 	display:none;
 }
 
-.page-template-opportunities-php .dd {
-	float:left;
-	margin:0;
-}
-
 .page-template-opportunities-php .contact {
 	margin-top:30px;
 }
@@ -618,6 +613,21 @@ Datos economicos
 	display:none;
 }
 
+
+
+.page-template-data-php .combos {
+	margin-bottom:30px;
+}
+
+.page-template-data-php h3 {
+	font-size:12px;
+	font-weight:bold;
+}
+
+.page-template-data-php h1 {
+	margin-bottom:20px;
+}
+
 .page-template-data-php .post-name {
 	color:#264B66;
 	font-size:16px;
@@ -626,8 +636,34 @@ Datos economicos
 	margin-bottom:10px;
 }
 
+.page-template-data-php .fuente {
+	font-size:11px;
+}
 
 
+
+
+
+
+
+.page-template-data-php .dd,
+.page-template-opportunities-php .dd {
+	float:left;
+	margin:0;
+	width:328px !important;
+}
+
+.page-template-data-php .dd .ddChild,
+.page-template-opportunities-php .dd .ddChild{
+	width:326px !important;
+}
+
+
+
+
+body.page-template-data-php #content {
+	width:700px;
+}
 
 .page #content {
 	width:480px;

@@ -61,7 +61,6 @@ function oportunidades(combo) {
 	if (combo.value != 'none') {
 		document.getElementById(combo.value).style.display="block";
 	}
-	
 }
 
 function partners(combo, another, list) {
@@ -80,8 +79,4 @@ function partners(combo, another, list) {
 			}
 		}
 	}
-	
-	//another.selectedIndex = 0;
-	
-	//alert(list.childNodes.length);
 }

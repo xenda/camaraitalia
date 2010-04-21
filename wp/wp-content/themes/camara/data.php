@@ -36,6 +36,7 @@ Template Name: Datos Economicos
 						<?php if( have_posts() ): ?>
 							<?php while (have_posts()) : the_post(); ?>
 								<div id="post-<?php the_ID(); ?>" class="dropdown-content">
+									<h1><?php the_title(); ?></h1>
 									<?php the_content(); ?>
 								</div>	
 							<?php endwhile; ?>
@@ -45,8 +46,7 @@ Template Name: Datos Economicos
 					
 				</div>
 	
-		</div>		
-		<?php get_sidebar('right'); ?>		
+		</div>	
 		
 		<div class="clear"></div>
 		<?php get_footer(); ?>

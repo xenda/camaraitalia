@@ -9,4 +9,6 @@ echo "\n\n\n";
 include('dd.css');
 echo "\n\n\n";
 include('sidebar.css');
+echo "\n\n\n";
+include('tabla.css');
 ?>
