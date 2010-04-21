@@ -21,7 +21,7 @@ Template Name: Datos Economicos
 						<?php query_posts($args); ?> 
 						
 						<?php if( have_posts() ): ?>
-							<select class="dropdown">
+							<select class="dropdown" id="main-combo">
 								<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
 								<?php while (have_posts()) : the_post(); ?>
 									<option value="post-<?php the_ID(); ?>"><?php the_title(); ?></option>

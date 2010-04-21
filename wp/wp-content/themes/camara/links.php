@@ -8,16 +8,15 @@
 Template Name: Links
 */
 ?>
-
 <?php get_header(); ?>
-
-<div id="content" class="widecolumn">
-
-<h2>Links:</h2>
-<ul>
-<?php wp_list_bookmarks(); ?>
-</ul>
-
-</div>
-
-<?php get_footer(); ?>
+	<div id="container">
+		<?php get_sidebar('left'); ?>
+		<div id="content">
+		
+	
+		</div>		
+		<?php get_sidebar('right'); ?>		
+		
+		<div class="clear"></div>
+		<?php get_footer(); ?>
+	</div>

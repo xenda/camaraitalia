@@ -26,12 +26,13 @@ Template Name: Socios
 							<?php endforeach; ?>
 						</select>
 			
-						Alfabetico
-						<select id="alfabetico" class="dropdown">
+						<?php echo _e("<!--:it-->[Meze]<!--:--><!--:es-->[Por mes]<!--:-->"); ?>:
+						
+						<select id="month" class="dropdown">
 							<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
-							<?php for($x = 65; $x <= 90; $x++): ?>
-								<option value="letter-<?php echo strtolower(chr($x)); ?>"><?php echo chr($x); ?></option>
-							<?php endfor; ?>
+							<?php foreach($months[$q_config['language']] as $key => $value): ?>
+								<option value="month-<?php echo $key; ?>"><?php echo $value; ?></option>
+							<?php endforeach; ?>
 						</select>
 												
 						<?php $args = array(); ?>
@@ -67,5 +68,5 @@ Template Name: Socios
 		<?php get_sidebar('right'); ?>		
 		
 		<div class="clear"></div>
+		<?php get_footer(); ?>
 	</div>
-<?php get_footer(); ?>

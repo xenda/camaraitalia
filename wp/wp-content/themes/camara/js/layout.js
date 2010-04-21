@@ -31,66 +31,16 @@ Site = {
 		}
 	},
 	combos: function(){
-		//$('.dropdown').msDropDown();
-
-		//Oportunidades
-			$('.page-template-opportunities-php .dropdown').change(function () {
-				//alert($(this).val());
-				$('.dropdown-content').fadeOut();
-				if ($(this).val() == 'none'){
-					return false;
-				}
-				var id = '.page-template-opportunities-php #' + $(this).val();
-				
-				$(id).fadeIn();
-	
-			});
-			
-			$('.page-template-opportunities-php .dropdown').change();
-		//fin
 		
-		//Socios
-			$('.page-template-partners-php .dropdown').change(function () {
-				
-				$('.dropdown-content li').fadeOut();
-				if ($(this).val() == 'none'){
-					$('.dropdown-content li').fadeIn();					
-					return false;
-				}
-				
-				var id = '.page-template-partners-php li.' + $(this).val();
-				$(id).fadeIn();
-	
-			});
-			
-			if ($('.page-template-partners-php .dropdown').val() != 'none') {
-				$('.page-template-partners-php .dropdown').change();
-			}
-
-			
-			//Socios
-			$('.page-template-data-php .dropdown').change(function () {
-				
-				$('.dropdown-content').fadeOut();
-				if ($(this).val() == 'none'){
-					$('.dropdown-content').fadeIn();					
-					return false;
-				}
-				
-				var id = '#' + $(this).val();
-				$(id).fadeIn();
-	
-			});
-			
-			if ($('.page-template-data-php .dropdown').val() != 'none') {
-				$('.page-template-data-php .dropdown').change();
-			}			
+		$('#main-combo').msDropDown();
+		$('#sector').msDropDown();
+		$('#month').msDropDown();
+		$('#alfabetico').msDropDown();
 	},
 	init: function(){
 		
 		Site.ddpng();
 		Site.combos();
-		//Site.nav();
 		
 		$(document.body).addClass('hasJS');
 
@@ -98,3 +48,18 @@ Site = {
 };
 
 $(document).ready(Site.init);
+
+function oportunidades(combo) {
+	
+	var total = combo.length - 1;
+	var int = 1;
+
+	for(int=1; int <= total; int++){
+		document.getElementById(combo[int].value).style.display="none";
+	}
+
+	if (combo.value != 'none') {
+		document.getElementById(combo.value).style.display="block";
+	}
+	
+}

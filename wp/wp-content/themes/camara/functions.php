@@ -7,9 +7,35 @@ $categories = array();
 $categories['opportunities'] = 5;
 $categories['partners'] = 8;
 $categories['data'] = 53;
-$categories['faires'] = 82;
+$categories['faires'] = 54;
 $categories['network'] = 84;
 
+
+$months['es'][] = 'Enero';
+$months['es'][] = 'Febrero';
+$months['es'][] = 'Marzo';
+$months['es'][] = 'Abril';
+$months['es'][] = 'Mayo';
+$months['es'][] = 'Junio';
+$months['es'][] = 'Julio';
+$months['es'][] = 'Agosto';
+$months['es'][] = 'Septiembre';
+$months['es'][] = 'Octubre';
+$months['es'][] = 'Noviembre';
+$months['es'][] = 'Diciembre';
+
+$months['it'][] = 'Gennaio';
+$months['it'][] = 'Febbraio';
+$months['it'][] = 'Marzo';
+$months['it'][] = 'Aprile';
+$months['it'][] = 'Maggio';
+$months['it'][] = 'Giugno';
+$months['it'][] = 'Luglio';
+$months['it'][] = 'Agosto';
+$months['it'][] = 'Settembre';
+$months['it'][] = 'Ottobre';
+$months['it'][] = 'Novembre';
+$months['it'][] = 'Dicembre';
 
 function get_first_letter($value){
 	return strtolower(substr($value, 0, 1));

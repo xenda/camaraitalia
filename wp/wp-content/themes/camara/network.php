@@ -17,6 +17,7 @@ Template Name: Red de Camaras
 					
 						<?php $args = array(); ?>
 						<?php $args['child_of'] = $categories['network']; ?>
+						<?php $args['hierarchical'] = false; ?>
 						<?php $categories = get_categories( $args ); ?> 
 						Por sector
 						<select id="sector" class="dropdown">
@@ -25,15 +26,7 @@ Template Name: Red de Camaras
 								<option value="cat-<?php echo $cat->cat_ID; ?>"><?php echo $cat->cat_name; ?></option>
 							<?php endforeach; ?>
 						</select>
-			
-						Alfabetico
-						<select id="alfabetico" class="dropdown">
-							<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
-							<?php for($x = 65; $x <= 90; $x++): ?>
-								<option value="letter-<?php echo strtolower(chr($x)); ?>"><?php echo chr($x); ?></option>
-							<?php endfor; ?>
-						</select>
-												
+															
 						<?php $args = array(); ?>
 						<?php $args['showposts'] = -1; ?>
 						<div class="dropdown-content">

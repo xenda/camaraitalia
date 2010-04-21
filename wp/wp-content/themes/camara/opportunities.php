@@ -18,13 +18,16 @@ Template Name: Oportunidades
 					<?php $args = array(); ?>
 					<?php $args['child_of'] = $categories['opportunities']; ?>
 					<?php $categories = get_categories( $args ); ?> 
-					
-					<select class="dropdown">
-						<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
-						<?php foreach ($categories as $cat): ?>
-							<option value="cat-<?php echo $cat->cat_ID; ?>"><?php echo $cat->cat_name; ?></option>
-						<?php endforeach; ?>
-					</select>
+
+					<div class="combos">
+						<select id="main-combo" onchange="oportunidades(this)">
+							<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
+							<?php foreach ($categories as $cat): ?>
+								<option value="cat-<?php echo $cat->cat_ID; ?>"><?php echo $cat->cat_name; ?></option>
+							<?php endforeach; ?>
+						</select>
+						<div class="clear"></div>
+					</div>
 					
 					<?php $args = array(); ?>
 					<?php $args['showposts'] = -1; ?>
@@ -48,7 +51,7 @@ Template Name: Oportunidades
 						</div>
 					<?php endforeach; ?>
 					</div>
-					<!-- 
+
 					<div class="contact">
 						<?php
 						$lang['it'] = 'Se desidera contattarsi con qualcuna di queste imprese, si comunichi con l’ufficio commerciale. <a href="mailto:oficinacomercial@cameritpe.com">oficinacomercial@cameritpe.com</a>, <br />tel/fax: (00511) 445-4278/4471785,interno 108, <br /><strong>facendo riferimento al codice a lato.</strong>.';
@@ -56,7 +59,7 @@ Template Name: Oportunidades
 						echo _e("<!--:it-->" . $lang['it'] . "<!--:--><!--:es-->" . $lang['es'] . "<!--:-->");
 						?>
 					</div>
-					 -->
+
 				</div>
 	
 		</div>		
