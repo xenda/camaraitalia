@@ -19,7 +19,7 @@ Template Name: Socios
 						<?php $args['child_of'] = $categories['faires']; ?>
 						<?php $categories = get_categories( $args ); ?> 
 						Por sector
-						<select id="sector" class="dropdown">
+						<select id="main-combo" class="dropdown">
 							<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
 							<?php foreach ($categories as $cat): ?>
 								<option value="cat-<?php echo $cat->cat_ID; ?>"><?php echo $cat->cat_name; ?></option>
@@ -28,7 +28,7 @@ Template Name: Socios
 			
 						<?php echo _e("<!--:it-->[Meze]<!--:--><!--:es-->[Por mes]<!--:-->"); ?>:
 						
-						<select id="month" class="dropdown">
+						<select id="second-combo" class="dropdown">
 							<option value="none"><?php echo _e("<!--:it-->[Seleziona]<!--:--><!--:es-->[Seleccionar]<!--:-->"); ?></option>
 							<?php foreach($months[$q_config['language']] as $key => $value): ?>
 								<option value="month-<?php echo $key; ?>"><?php echo $value; ?></option>
