@@ -866,12 +866,46 @@ Publicaciones
 	line-height:24px;
 }
 
+
+.page-template-events-php .meta {
+	color:#2F5D7F;
+	font-size:14px;
+	font-weight:bold;	
+	margin:25px 0 15px 0;
+}
+
+.page-template-events-php h2 {
+	color:#264B66;
+	font-size:16px;
+	font-weight:bold;
+	line-height:24px;
+	margin:0px 0 15px 0;
+}
+
+.magazine {
+	margin-bottom:30px;
+}
+
+.gallery {
+	margin-top:25px;
+}
+
 .gallery a {
-	/*display:none;*/
+	display:none;
 }
 
 .gallery a.first {
 	display:inline;
 	padding-left:7px;
-	border-left:solid 15px #33818c;
+	border-left:solid 15px #2F5D7F;
+	color:#33818C;
+	text-decoration:none;
+}
+
+.gallery a:hover {
+	color:#264b66;
+	}
+
+#contact {
+	display:none;
 }

@@ -24,7 +24,8 @@ Template Name: Eventos
 							<?php $var = 1;?>
 							<?php while (have_posts()) : the_post(); ?>
 								<div id="post-<?php the_ID(); ?>" class="magazine">
-									<h2><?php the_title(); ?></h2>		
+									<div class="meta"><?php echo $months[$q_config['language']][(int) get_the_time('m')-1]; ?> <?php the_time('Y')?></div>
+									<h2><?php the_title(); ?></h2>	
 									<?php the_content(); ?>
 									<?php $gallery = get_gallery(get_the_ID()); ?>
 									<?php if ($gallery): ?>
