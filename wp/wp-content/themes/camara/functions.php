@@ -74,6 +74,23 @@ function load_js($theme_url) {
 	*/
 }
 
+function get_gallery($id = null) {
+	$gallery = array();
+	$attachments = get_children( array('post_parent' => $id, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order ID') );
+	if ($attachments) {
+		foreach ( $attachments as $id => $attachment ) {
+			$gallery[] = array(
+				'title'  => $attachment->post_title,
+				'desc'   => $attachment->post_content,
+				'alt'    => $attachment->post_excerpt,
+				'order'  => $attachment->menu_order,
+				'full'   => wp_get_attachment_image_src($id, 'full', false),
+			);
+		}
+	}
+	return $gallery;
+}
+
 if ( function_exists('register_sidebar') ) {
 	register_sidebar(array(
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',

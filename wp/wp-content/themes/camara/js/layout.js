@@ -31,16 +31,20 @@ Site = {
 		}
 	},
 	combos: function(){
-		
 		$('#main-combo').msDropDown();
 		$('#second-combo').msDropDown();
-		//$('#month').msDropDown();
-		//$('#alfabetico').msDropDown();
+	},
+	gallery: function(){
+		var total = $("div.gallery").length;
+		for (x=1; x <= total; x++){
+			$("a[rel='gallery-" + x + "']").colorbox();
+		}	
 	},
 	init: function(){
 		
 		Site.ddpng();
 		Site.combos();
+		Site.gallery();
 		
 		$(document.body).addClass('hasJS');
 

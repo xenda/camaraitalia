@@ -865,3 +865,13 @@ Publicaciones
 	height:24px;
 	line-height:24px;
 }
+
+.gallery a {
+	/*display:none;*/
+}
+
+.gallery a.first {
+	display:inline;
+	padding-left:7px;
+	border-left:solid 15px #33818c;
+}

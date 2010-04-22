@@ -11,4 +11,6 @@ echo "\n\n\n";
 include('sidebar.css');
 echo "\n\n\n";
 include('tabla.css');
+echo "\n\n\n";
+include('colorbox.css');
 ?>
