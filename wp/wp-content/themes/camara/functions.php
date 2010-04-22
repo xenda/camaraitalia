@@ -10,7 +10,7 @@ $categories['data'] = 53;
 $categories['faires'] = 54;
 $categories['network'] = 84;
 $categories['publications'] = 92;
-
+$categories['events'] = 52;
 
 $months['es'][] = 'Enero';
 $months['es'][] = 'Febrero';

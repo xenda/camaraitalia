@@ -57,9 +57,11 @@ function oportunidades(combo) {
 	for(int=1; int <= total; int++){
 		document.getElementById(combo[int].value).style.display="none";
 	}
+	document.getElementById('contact').style.display="none";
 
 	if (combo.value != 'none') {
 		document.getElementById(combo.value).style.display="block";
+		document.getElementById('contact').style.display="block";
 	}
 }
 
